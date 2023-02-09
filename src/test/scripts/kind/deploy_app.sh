@@ -49,15 +49,15 @@ deploy_app() {
                --wait --timeout=360s \
                --debug
 
-  if [ ${DC_APP} == "bamboo" ]; then
-    echo "[INFO]: Deploying Bamboo agent..."
-    cd ../bamboo-agent
-    helm dependency build
-    helm upgrade --install bamboo-agent ./ -n atlassian \
-                 --set agent.server=bamboo.atlassian.svc.cluster.local \
-                 --set agent.resources.container.requests.cpu=20m \
-                 --wait --timeout=360s --debug
-  fi
+  # if [ ${DC_APP} == "bamboo" ]; then
+  #   echo "[INFO]: Deploying Bamboo agent..."
+  #   cd ../bamboo-agent
+  #   helm dependency build
+  #   helm upgrade --install bamboo-agent ./ -n atlassian \
+  #                --set agent.server=bamboo.atlassian.svc.cluster.local \
+  #                --set agent.resources.container.requests.cpu=20m \
+  #                --wait --timeout=360s --debug
+  # fi
 }
 
 verify_ingress() {
