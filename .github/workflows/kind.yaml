@@ -72,7 +72,8 @@ jobs:
       - name: Get secrets
         run: |
           mkdir -p logs
-          kubectl get secrets -n atlassian -o yaml > logs/secrets.yaml
+          kubectl get secrets -n atlassian -o yaml > logs/${{inputs.dc_app}}-secrets.yaml
+          echo "${LICENSE}" > logs/${{inputs.dc_app}}-license
           
       # - name: Test scaling ${{inputs.dc_app}}
       #   run: |
