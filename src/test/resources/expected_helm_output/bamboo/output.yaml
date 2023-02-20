@@ -5,10 +5,10 @@ kind: ServiceAccount
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
 ---
 # Source: bamboo/templates/config-jvm.yaml
@@ -17,10 +17,10 @@ kind: ConfigMap
 metadata:
   name: unittest-bamboo-jvm-config
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
 data:
   additional_jvm_args: >-
@@ -34,10 +34,10 @@ kind: Service
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
   annotations:
 spec:
@@ -57,10 +57,10 @@ kind: StatefulSet
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -72,7 +72,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: b7bf1d4380462d1819920a048ed2cd2b8b3fca692e97c7b7f7845b4c83228766
+        checksum/config-jvm: c7edd3f6f653e172a5b2617032be0dbc38422d2d9d4e800e69d4d621683544b8
       labels:
         app.kubernetes.io/name: bamboo
         app.kubernetes.io/instance: unittest-bamboo
@@ -93,7 +93,7 @@ spec:
           command: ["sh", "-c", "(chgrp 2005 /shared-home; chmod g+w /shared-home)"]
       containers:
         - name: bamboo
-          image: "atlassian/bamboo:9.2.1"
+          image: "atlassian/bamboo:9.2.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: ATL_TOMCAT_SCHEME
@@ -206,10 +206,10 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
 spec:
   containers:
@@ -250,10 +250,10 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bamboo-1.10.0
+    helm.sh/chart: bamboo-1.10.1
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
-    app.kubernetes.io/version: "9.2.1"
+    app.kubernetes.io/version: "9.2.2"
     app.kubernetes.io/managed-by: Helm
 spec:
   containers:

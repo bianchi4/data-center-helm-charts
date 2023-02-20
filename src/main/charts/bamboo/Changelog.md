@@ -1,5 +1,17 @@
 # Change Log
 
+## 1.10.1
+
+**Release date:** 2023-2-20
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Fix typo in readme as per jira ticket
+* Update appVersions for DC apps
+* Update Bamboo Readme file
+
 ## 1.10.0
 
 **Release date:** 2023-2-20
