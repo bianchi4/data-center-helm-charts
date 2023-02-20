@@ -36,8 +36,9 @@ def get_chart_versions():
 def gen_changelog(product, path):
     repo = git.Repo(path)
     cli = git.Git(path)
+    tags = sorted(repo.tags, key=lambda t: t.commit.committed_datetime)
 
-    lasttag = repo.tags[-1]
+    lasttag = tags[-1]
     tagver = re.sub(r'^[^-]+-', '', lasttag.name)
     log.info(f'Generating {product} changelog since {tagver}')
 
@@ -58,7 +59,7 @@ def gen_changelog(product, path):
     # remove Jira keys from commit messages. This substitution assumes the commit message may have the following format:
     # CLIP-1234: Here is my message
     # DCCLIP-1234: Here is my message
-    sanitized_changelog = map(lambda c: re.sub(r'(CLIP|DCCLIP)-[0-9]{4}(?![0-9]): ', '', c), filtered_changelog)
+    sanitized_changelog = map(lambda c: re.sub(r'(CLIP|DCCLIP)-[0-9]{1,5}(?![0-9]): ', '', c), filtered_changelog)
     return list(dict.fromkeys(sanitized_changelog))
 
 
@@ -79,7 +80,7 @@ def update_changelog_file(product, version, changelog, chartversions):
     foundfirst = False
     with open(clfile, 'r') as clfd:
         for line in clfd:
-            if not foundfirst and re.match(r'^## [0-9]\.[0-9]\.[0-9]', line) != None:
+            if not foundfirst and re.match(r'^## [0-9]\.[0-9]{1,2}\.[0-9]{1,2}', line) != None:
                 # First version line, inject ours before it
                 foundfirst = True
 
@@ -156,7 +157,7 @@ def parse_args():
 
 
 def main():
-    log.basicConfig(level=log.INFO)
+    log.basicConfig(level=log.DEBUG)
 
     args = parse_args()
     log.info(f"Updating Helm charts to release {args.version}")
