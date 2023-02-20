@@ -59,7 +59,7 @@ jobs:
 
       - name: Lint yamls with ah cli
         run: |
-          echo "[INFO]: Validating Chart.yamls in ${GITHUB_WORKSPACE}
+          echo "[INFO]: Validating Chart.yamls in ${GITHUB_WORKSPACE}"
           docker run -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah sh -c 'ah lint -p /charts'
 
       - name: Configure Git
