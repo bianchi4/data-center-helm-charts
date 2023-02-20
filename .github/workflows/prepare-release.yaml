@@ -60,7 +60,7 @@ jobs:
       - name: Lint yamls with ah cli
         run: |
           echo ${GITHUB_WORKSPACE}
-          docker run -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah sh -c 'ah lint charts/src/main/charts'
+          docker run -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah sh -c 'ah lint -p charts/src/main/charts'
 
       - name: Configure Git
         run: |
