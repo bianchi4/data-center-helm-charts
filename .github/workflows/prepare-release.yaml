@@ -58,7 +58,7 @@ jobs:
           python src/main/scripts/prepare_release.py ${GITHUB_REF_NAME##*/}
 
       - name: Lint yamls with ah cli
-        run: docker run -ti -v src/main/charts:/charts artifacthub/ah sh -c 'ah lint charts/src/main/charts'
+        run: docker run -v src/main/charts:/charts artifacthub/ah sh -c 'ah lint charts/src/main/charts'
 
       - name: Configure Git
         run: |
