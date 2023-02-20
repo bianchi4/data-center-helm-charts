@@ -67,8 +67,12 @@ def format_changelog_yaml(changelog):
     # The artifacthub annotations are a single string, but formatted
     # like YAML. Replacing the leading '*' with '-'  and wrapping
     # strings in double quotes should be sufficient.
-    c2 = map(lambda c: re.sub(r'^\* ', '- "', c), changelog)
-    return '\n'.join(c2) + "\""
+    sanitized_changelog = []
+    for string in changelog:
+        string = string + '"'
+        sanitized_changelog.append(string)
+    c2 = map(lambda c: re.sub(r'^\* ', '- "', c), sanitized_changelog)
+    return '\n'.join(c2)
 
 
 def update_changelog_file(product, version, changelog, chartversions):
