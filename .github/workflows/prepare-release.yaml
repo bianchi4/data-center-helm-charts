@@ -55,6 +55,7 @@ jobs:
         run: |
           echo "[INFO]: Preparing release ${GITHUB_REF_NAME##*/}"
           cd data-center-helm-charts
+          git checkout ${GITHUB_REF_NAME}
           python src/main/scripts/prepare_release.py ${GITHUB_REF_NAME##*/}
 
       - name: Lint yamls with ah cli
@@ -70,12 +71,9 @@ jobs:
       - name: Commit changes and raise a PR
         run: |
           git checkout ${GITHUB_REF_NAME}
-          ls -la
           cp -rf data-center-helm-charts/src/* src
           rm -rf data-center-helm-charts
           git status
-          pwd
-          ls -la
           git add -A
           git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
           git push origin ${GITHUB_REF_NAME}

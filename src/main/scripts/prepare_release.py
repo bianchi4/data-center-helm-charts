@@ -42,7 +42,7 @@ def gen_changelog(product, path):
     tagver = re.sub(r'^[^-]+-', '', lasttag.name)
     log.info(f'Generating {product} changelog since {tagver}')
 
-    # git log will pick up commins in src/main/charts/$product directory only
+    # git log will pick up commits in src/main/charts/$product directory only
     changelog = cli.log(f'{lasttag}..main', "--", prodbase + '/' + product, graph=True, pretty='format:%s',
                         abbrev_commit=True, date='relative', )
 
