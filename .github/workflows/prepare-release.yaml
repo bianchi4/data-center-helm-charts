@@ -14,8 +14,6 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     runs-on: ubuntu-latest
-    container:
-      image: artifacthub/ah
 
     steps:
       - name: Checkout code
@@ -60,8 +58,7 @@ jobs:
           python src/main/scripts/prepare_release.py ${GITHUB_REF_NAME##*/}
 
       - name: Lint yamls with ah cli
-        working-directory: ./src/main/charts
-        run: ah lint
+        run: docker run -ti -v src/main/charts:/charts artifacthub/ah sh -c 'ah lint charts/src/main/charts'
 
       - name: Configure Git
         run: |
