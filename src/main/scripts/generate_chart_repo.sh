@@ -42,7 +42,7 @@ docker run --user "$(id -u):$(id -g)" \
   --skip-existing \
   --package-path /releases \
   --release-notes-file RELEASE_NOTES.md \
-  --owner atlassian \
+  --owner bianchi2 \
   --git-repo data-center-helm-charts \
   --token "$GITHUB_TOKEN"
 
@@ -58,9 +58,9 @@ docker run \
   --rm \
   quay.io/helmpack/chart-releaser:v1.5.0 \
   index \
-  --owner atlassian \
+  --owner bianchi2 \
   --git-repo data-center-helm-charts \
-  --charts-repo https://atlassian.github.io/data-center-helm-charts \
+  --charts-repo https://binachi2.github.io/data-center-helm-charts \
   --index-path /index/index.yaml \
   --package-path /packages \
   --token "$GITHUB_TOKEN"
