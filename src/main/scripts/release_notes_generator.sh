@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 products=(bamboo bamboo-agent bitbucket common confluence crowd jira)
 export REPO_PATH="${1}"
 export CHARTS_LOCATION="src/main/charts"
