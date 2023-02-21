@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -24,9 +25,19 @@ jobs:
         with:
           version: v3.9.4
 
+      - name: Setup Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9.14'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip gitpython ruamel_yaml
+
       - name: Generate Release Notes for GitHub Releases
         run: |
-          src/main/scripts/release_notes_generator.sh ${GITHUB_WORKSPACE}
+          cd src/main/scripts
+          ./release_notes_generator.sh ${GITHUB_WORKSPACE}
 
       - name: Release Helm Charts
         run: |
