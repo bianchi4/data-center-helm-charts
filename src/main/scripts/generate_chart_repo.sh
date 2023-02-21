@@ -35,7 +35,6 @@ echo "Uploading chart packages as Github releases"
 # repo as Release artifacts. GitHub will create corresponding git tags for each chart.
 docker run --user "$(id -u):$(id -g)" \
   -v "$(pwd)/$PACKAGE_DIR:/releases" \
-  --entrypoint cr \
   --rm \
   quay.io/helmpack/chart-releaser:v1.5.0 \
   upload \
