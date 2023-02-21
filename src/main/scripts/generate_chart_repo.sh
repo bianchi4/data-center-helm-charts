@@ -37,7 +37,7 @@ docker run --user "$(id -u):$(id -g)" \
   -v "$(pwd)/$PACKAGE_DIR:/releases" \
   --entrypoint cr \
   --rm \
-  quay.io/helmpack/chart-releaser:v1.2.1 \
+  quay.io/helmpack/chart-releaser:v1.5.0 \
   upload \
   --skip-existing \
   --package-path /releases \
@@ -56,7 +56,7 @@ docker run \
   -v "$(pwd)/$PACKAGE_DIR:/packages" \
   --entrypoint cr \
   --rm \
-  quay.io/helmpack/chart-releaser:v1.2.1 \
+  quay.io/helmpack/chart-releaser:v1.5.0 \
   index \
   --owner atlassian \
   --git-repo data-center-helm-charts \
