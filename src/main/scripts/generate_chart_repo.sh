@@ -41,6 +41,7 @@ docker run --user "$(id -u):$(id -g)" \
   upload \
   --skip-existing \
   --package-path /releases \
+  --release-notes-file RELEASE_NOTES.md \
   --owner atlassian \
   --git-repo data-center-helm-charts \
   --token "$GITHUB_TOKEN"

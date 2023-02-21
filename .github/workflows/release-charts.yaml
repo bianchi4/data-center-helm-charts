@@ -1,0 +1,37 @@
+name: Release Helm Charts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.9.4
+
+      - name: Generate Release Notes for GitHub Releases
+        run: |
+          src/main/scripts/release_notes_generator.sh ${GITHUB_WORKSPACE}
+
+      - name: Release Helm Charts
+        run: |
+          src/main/scripts/generate_chart_repo.sh ${GH_TOKEN}
+
+      - name: Commit and push index.yaml
+        run: |
+          git commit -m "Update index.yaml post release"
