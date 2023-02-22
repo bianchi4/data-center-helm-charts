@@ -5,7 +5,7 @@ kind: ServiceAccount
 metadata:
   name: unittest-bitbucket
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -17,7 +17,7 @@ kind: ConfigMap
 metadata:
   name: unittest-bitbucket-jvm-config-mesh
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -34,7 +34,7 @@ kind: ConfigMap
 metadata:
   name: unittest-bitbucket-jvm-config
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -51,7 +51,7 @@ kind: Service
 metadata:
   name: unittest-bitbucket-mesh-0
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -73,7 +73,7 @@ kind: Service
 metadata:
   name: unittest-bitbucket-mesh-1
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -95,7 +95,7 @@ kind: Service
 metadata:
   name: unittest-bitbucket-mesh-2
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -117,7 +117,7 @@ kind: Service
 metadata:
   name: unittest-bitbucket
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -148,7 +148,7 @@ kind: StatefulSet
 metadata:
   name: unittest-bitbucket-mesh
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -168,7 +168,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: 24a0106c473d530754f506901980ff027cc228bda047b390c4ae790f7ec3263c
+        checksum/config-jvm: 348bef56df9265d57bab72fc746bc3ad1cfbe1023141530a017102688033bd66
       labels:
         app.kubernetes.io/name: bitbucket-mesh
         app.kubernetes.io/instance: unittest-bitbucket
@@ -246,7 +246,7 @@ kind: StatefulSet
 metadata:
   name: unittest-bitbucket
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -266,7 +266,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: 01dccc31672600c8c9adde68643e200e05deca9e789c4ed2dd5ce71f546164c3
+        checksum/config-jvm: 65b4deaf1caafc0a94f05e864199d622be9ed66d4c619d48189bb73795ee5e5b
       labels:
         app.kubernetes.io/name: bitbucket
         app.kubernetes.io/instance: unittest-bitbucket
@@ -355,7 +355,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
@@ -387,7 +387,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bitbucket-1.10.4
+    helm.sh/chart: bitbucket-1.10.5
     app.kubernetes.io/name: bitbucket
     app.kubernetes.io/instance: unittest-bitbucket
     app.kubernetes.io/version: "7.21.11"
