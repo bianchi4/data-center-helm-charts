@@ -58,7 +58,7 @@ docker run \
   index \
   --owner bianchi2 \
   --git-repo data-center-helm-charts \
-  --index-path /index/index.yaml \
+  --index-path /index/docs/docs/index.yaml \
   --package-path /packages \
   --token "$GITHUB_TOKEN"
 
