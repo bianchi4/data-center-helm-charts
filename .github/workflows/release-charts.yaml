@@ -37,6 +37,7 @@ jobs:
 
       - name: Generate Release Notes for GitHub Releases
         run: |
+          git checkout ${GITHUB_REF_NAME}
           cd src/main/scripts
           ./release_notes_generator.sh ${GITHUB_WORKSPACE}
 
