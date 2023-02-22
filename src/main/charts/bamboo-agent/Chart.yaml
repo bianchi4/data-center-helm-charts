@@ -19,7 +19,7 @@ sources:
 deprecated: false
 annotations:
   artifacthub.io/containsSecurityUpdates: "false"
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - "Update Helm chart version"
 dependencies:
 - name: common

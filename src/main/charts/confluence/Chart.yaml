@@ -19,7 +19,7 @@ sources:
 deprecated: false
 annotations:
   artifacthub.io/containsSecurityUpdates: "true"
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - "More flexible svc annotations"
     - "Fix Confluence synchrony settings"
 
