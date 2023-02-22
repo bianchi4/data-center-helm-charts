@@ -9,8 +9,9 @@ from datetime import datetime
 from ruamel.yaml import YAML
 from tempfile import mkstemp
 
-products = ["bamboo", "bamboo-agent",
-            "bitbucket", "confluence", "crowd", "jira"]
+# products = ["bamboo", "bamboo-agent",
+#             "bitbucket", "confluence", "crowd", "jira"]
+products = ["jira"]
 prodbase = "src/main/charts"
 
 
@@ -56,7 +57,7 @@ def gen_changelog(product, path):
     pattern = re.compile(r'^\* Prepare release [0-9].{1,4}')
     filtered_changelog = list(filter(lambda x: not pattern.match(x), changelog))
 
-    if not filtered_changelog:
+    if filtered_changelog.count(''):
         # It is possible that there are no commits to the Helm chart,
         # in this case we just write a generic git log
         log.info(f'No commits to {product} Helm chart found')
