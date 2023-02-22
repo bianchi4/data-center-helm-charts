@@ -56,7 +56,7 @@ jobs:
           git checkout ${GITHUB_REF_NAME}
           git add -A
           git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
-          docker run -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah sh -c 'ah lint -p /charts'
+          docker run --workdir="/charts" -u root -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah ah lint
 
       - name: Commit changes and raise a PR
         run: |
