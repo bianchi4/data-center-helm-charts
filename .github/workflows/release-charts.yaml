@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.9.14'
 
-      - name: Install Python dependencies
+      - name: Install Python deps
         run: |
           python -m pip install --upgrade pip gitpython ruamel_yaml
 
