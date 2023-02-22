@@ -55,6 +55,7 @@ jobs:
 
       - name: Commit changes and raise a PR
         run: |
+          git checkout -b ${GITHUB_REF_NAME}
           git add -A
           git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
           git push origin ${GITHUB_REF_NAME}
