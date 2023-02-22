@@ -49,6 +49,7 @@ echo "Regenerating chart repo index.yaml"
 # release artifacts on GitHub, and add any missing releases to the index.yaml file. The updated file is then left in
 # $PUBLISH_DIR for committing to git.
 docker run \
+  -u root:root \
   -v "$(pwd):/index" \
   -v "$(pwd)/$PACKAGE_DIR:/packages" \
   --workdir="/index" \
