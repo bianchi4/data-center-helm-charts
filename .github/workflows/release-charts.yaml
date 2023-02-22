@@ -11,9 +11,10 @@ jobs:
       PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          ref: refs/heads/main
 
       - name: Configure Git
         run: |
@@ -36,8 +37,6 @@ jobs:
 
       - name: Generate Release Notes for GitHub Releases
         run: |
-          git status
-          git pull
           cd src/main/scripts
           ./release_notes_generator.sh ${GITHUB_WORKSPACE}
 
@@ -60,7 +59,5 @@ jobs:
 
       - name: Commit and push index.yaml
         run: |
-          git checkout -b update-index-yaml-${GITHUB_RUN_ID}
           git commit -m "Update index.yaml post release"
-          git push origin update-index-yaml-${GITHUB_RUN_ID}
-          gh pr create --title "Update index.yaml" --body "Update index.yaml after release" --base main --head update-index-yaml-${GITHUB_RUN_ID}
+          git push origin ${GITHUB_REF_NAME}
