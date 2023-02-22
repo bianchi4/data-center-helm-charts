@@ -9,9 +9,8 @@ from datetime import datetime
 from ruamel.yaml import YAML
 from tempfile import mkstemp
 
-# products = ["bamboo", "bamboo-agent",
-#             "bitbucket", "confluence", "crowd", "jira"]
-products = ["jira"]
+products = ["bamboo", "bamboo-agent",
+            "bitbucket", "confluence", "crowd", "jira"]
 prodbase = "src/main/charts"
 
 
