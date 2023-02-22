@@ -33,8 +33,7 @@ for chart in "$CHARTS_SRC_DIR"/*/
 echo "Uploading chart packages as Github releases"
 # This will scan $PACKAGE_DIR for the tgz files that 'helm package' just generated, and upload them to the GitHub
 # repo as Release artifacts. GitHub will create corresponding git tags for each chart.
-docker run --user "$(id -u):$(id -g)" \
-  -v "$(pwd)/$PACKAGE_DIR:/releases" \
+docker run -v "$(pwd)/$PACKAGE_DIR:/releases" \
   --rm \
   quay.io/helmpack/chart-releaser:v1.5.0 \
   upload \
