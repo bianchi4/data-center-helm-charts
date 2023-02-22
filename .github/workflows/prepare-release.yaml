@@ -40,12 +40,14 @@ jobs:
 
       - name: Generate changelog and Chart annotations
         run: |
+          git checkout -b ${GITHUB_REF_NAME}
           echo "[INFO]: Preparing release ${GITHUB_REF_NAME##*/}"
           python src/main/scripts/prepare_release.py ${GITHUB_REF_NAME##*/}
 
       - name: Lint yamls with ah cli
         run: |
           echo "[INFO]: Validating Chart.yamls in ${GITHUB_WORKSPACE}"
+          ls -la ${GITHUB_WORKSPACE}/src/main/charts
           docker run -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah sh -c 'ah lint -p /charts'
 
       - name: Configure Git
@@ -55,7 +57,6 @@ jobs:
 
       - name: Commit changes and raise a PR
         run: |
-          git checkout -b ${GITHUB_REF_NAME}
           git add -A
           git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
           git push origin ${GITHUB_REF_NAME}
