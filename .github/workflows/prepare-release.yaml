@@ -53,12 +53,12 @@ jobs:
 
       - name: Lint yamls with ah cli
         run: |
-          git checkout ${GITHUB_REF_NAME}
-          git add -A
-          git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
           docker run --workdir="/charts" -u root -v ${GITHUB_WORKSPACE}/src/main/charts:/charts artifacthub/ah ah lint
 
       - name: Commit changes and raise a PR
         run: |
+          git checkout ${GITHUB_REF_NAME}
+          git add -A
+          git commit -m "Prepare release ${GITHUB_REF_NAME##*/}"
           git push origin ${GITHUB_REF_NAME}
           gh pr create --title "Release/${GITHUB_REF_NAME##*/}" --body "Prepare to release ${GITHUB_REF_NAME##*/}" --base main --head ${GITHUB_REF_NAME}
