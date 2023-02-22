@@ -19,6 +19,6 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           
-          git fetch --all
-          git fetch --tags
+          git tag
+          
           git log --graph --pretty=format:%s --abbrev-commit --date=relative bamboo-1.10.8..main -- src/main/charts/bamboo
