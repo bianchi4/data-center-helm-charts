@@ -14,6 +14,10 @@ products = ["bamboo", "bamboo-agent",
 prodbase = "src/main/charts"
 
 
+def changelog_filter(log_entry):
+    return re.match(r'^Prepare release [0-9].{1,4}', log_entry) is None
+
+
 def get_chart_versions():
     versions = {}
     for prod in products:
@@ -46,15 +50,18 @@ def gen_changelog(product, path):
     changelog = cli.log(f'{lasttag}..main', "--", prodbase + '/' + product, graph=True, pretty='format:%s',
                         abbrev_commit=True, date='relative', )
 
-    if not changelog:
+    changelog = changelog.split('\n')
+    # we don't need pre-release commits that update chart.yamls and changelogs
+    # this pattern is based on the commit message from a GitHub action that prepares Helm release
+    pattern = re.compile(r'^\* Prepare release [0-9].{1,4}')
+    filtered_changelog = list(filter(lambda x: not pattern.match(x), changelog))
+
+    if not filtered_changelog:
         # It is possible that there are no commits to the Helm chart,
         # in this case we just write a generic git log
         log.info(f'No commits to {product} Helm chart found')
         default_git_log = '* Update Helm chart version'
-        changelog = default_git_log
-
-    changelog = changelog.split('\n')
-    filtered_changelog = list(changelog)
+        filtered_changelog = [default_git_log]
 
     # remove Jira keys from commit messages. This substitution assumes the commit message may have the following format:
     # CLIP-1234: Here is my message
