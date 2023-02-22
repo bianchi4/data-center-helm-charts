@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.10.9
+
+**Release date:** 2023-2-22
+
+![AppVersion: 9.2.1](https://img.shields.io/static/v1?label=AppVersion&message=9.2.1&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Prepare release 1.10.8
+
 ## 1.10.8
 
 **Release date:** 2023-2-22
