@@ -13,11 +13,6 @@ products = ["bamboo", "bamboo-agent",
             "bitbucket", "confluence", "crowd", "jira"]
 prodbase = "src/main/charts"
 
-
-def changelog_filter(log_entry):
-    return re.match(r'^Prepare release [0-9].{1,4}', log_entry) is None
-
-
 def get_chart_versions():
     versions = {}
     for prod in products:
