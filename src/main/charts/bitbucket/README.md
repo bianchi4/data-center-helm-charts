@@ -229,3 +229,4 @@ Update bamboo
 Refactor bitbucket dependencies to update dependencies
 Update bamboo
 Update bamboo
+Fix bitbucket documentation for better readability
