@@ -151,3 +151,4 @@ Update bamboo
 Merge jira values for better maintainability
 Update bamboo
 Update bamboo
+Refactor jira chart to implement a new feature
