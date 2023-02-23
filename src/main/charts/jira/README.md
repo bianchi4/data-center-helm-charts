@@ -157,3 +157,4 @@ Update bamboo
 Update jira chart to enhance flexibility
 Update bamboo
 Update bamboo
+Fix jira dependencies to update dependencies
