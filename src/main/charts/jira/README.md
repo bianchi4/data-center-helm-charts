@@ -135,3 +135,4 @@ Remove jira tests to optimize memory usage
 Optimize jira values to implement a new feature
 Move jira values for better readability
 Merge jira statefulset to enhance flexibility
+Add jira templates to enhance flexibility
