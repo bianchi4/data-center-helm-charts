@@ -2,7 +2,7 @@ apiVersion: v2
 name: confluence
 description: A chart for installing Confluence Data Center on Kubernetes
 type: application
-version: 1.10.14
+version: 1.10.15
 appVersion: 7.19.5
 kubeVersion: ">=1.21.x-0"
 keywords:
@@ -20,7 +20,10 @@ deprecated: false
 annotations:
   artifacthub.io/containsSecurityUpdates: "true"
   artifacthub.io/changes: |-
-    - "Allow overriding setting Synchrony port"
+    - "Move chart to update dependencies"
+    - "Remove templates for better readability"
+    - "Optimize templates to improve performance"
+    - "Merge documentation to implement a new feature"
 
 dependencies:
 - name: common
