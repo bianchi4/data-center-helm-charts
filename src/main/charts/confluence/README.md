@@ -218,3 +218,4 @@ Update bamboo
 Remove confluence helmfile to update dependencies
 Update bamboo
 Update bamboo
+Refactor confluence chart to implement a new feature
