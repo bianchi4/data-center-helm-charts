@@ -189,3 +189,4 @@ Merge confluence tests to remove deprecated code
 Update bamboo
 Update bamboo
 Refactor confluence chart for better maintainability
+Update bamboo
