@@ -212,3 +212,4 @@ Fix bitbucket dependencies to implement a new feature
 Update bamboo
 Update bamboo
 Fix bitbucket templates to optimize memory usage
+Update bamboo
