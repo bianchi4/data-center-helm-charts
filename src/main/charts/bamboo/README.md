@@ -218,3 +218,4 @@ Update bamboo
 Fix bamboo chart for better maintainability
 Update bamboo
 Update bamboo
+Rework bamboo dependencies to update dependencies
