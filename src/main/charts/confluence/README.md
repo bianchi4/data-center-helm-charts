@@ -215,3 +215,4 @@ Update bamboo
 Merge confluence statefulset for better maintainability
 Update bamboo
 Update bamboo
+Remove confluence helmfile to update dependencies
