@@ -253,3 +253,4 @@ Update bamboo
 Update bamboo
 Fix confluence templates to implement a new feature
 Update bamboo
+Update bamboo
