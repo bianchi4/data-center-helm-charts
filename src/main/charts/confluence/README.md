@@ -231,3 +231,4 @@ Update confluence helmfile to optimize memory usage
 Update bamboo
 Update bamboo
 Optimize confluence statefulset to improve performance
+Update bamboo
