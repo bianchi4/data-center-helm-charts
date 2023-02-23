@@ -182,3 +182,4 @@ Move confluence documentation to optimize memory usage
 Add confluence tests to implement a new feature
 Fix confluence dependencies to update dependencies
 Fix confluence dependencies to improve performance
+Rework confluence chart to remove deprecated code
