@@ -153,3 +153,4 @@ Add bamboo chart to fix a bug
 Update bamboo
 Update bamboo
 Remove bamboo templates to optimize memory usage
+Update bamboo
