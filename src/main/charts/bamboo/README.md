@@ -146,3 +146,4 @@ Rework bamboo values to enhance flexibility
 Move bamboo helmfile for better readability
 Move bamboo dependencies to improve performance
 Rework bamboo chart for better maintainability
+Remove bamboo chart to enhance flexibility
