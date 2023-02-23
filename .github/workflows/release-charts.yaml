@@ -43,7 +43,7 @@ jobs:
           for product in "${products[@]}"; do
             echo "[INFO]: Generating ${REPO_PATH}/${CHARTS_LOCATION}/${product}/RELEASE_NOTES.md"
             REL_NOTES_LIST=$(python3 -W ignore -c "import prepare_release; print (prepare_release.gen_changelog(\"${product}\", \"${REPO_PATH}\"))")
-            python3 -c "print('\n'.join(\"${REL_NOTES_LIST}\"))" > "${REPO_PATH}"/"${CHARTS_LOCATION}"/"${product}"/RELEASE_NOTES.md
+            python -c "list=${REL_NOTES_LIST}; print('\n'.join(list))" > "${REPO_PATH}"/"${CHARTS_LOCATION}"/"${product}"/RELEASE_NOTES.md
           done
 
       - name: Execute helm dependency update for bamboo chart
