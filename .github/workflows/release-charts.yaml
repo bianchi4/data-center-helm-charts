@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TEST_SIGN_HELM: ${{secrets.TEST_SIGN_HELM }}
       PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     steps:
       - name: Checkout
@@ -59,6 +60,14 @@ jobs:
       - name: Execute helm dependency update for jira chart
         run: helm dependency update src/main/charts/jira
 
+      - name: Get Helm Signing Key
+        run: |
+          echo ${TEST_SIGN_HELM} > testgpg
+          gpg --import testgpg
+          gpg --list-keys
+          pg --export > ~/.gnupg/pubring.gpg
+          gpg --export-secret-keys > ~/.gnupg/secring.gpg
+          
       - name: Release Helm Charts
         run: |
           src/main/scripts/generate_chart_repo.sh ${GH_TOKEN}
