@@ -83,6 +83,7 @@ jobs:
       - name: Upload Public Key To Release Assets
         run: |
           cd src/main/scripts
+          export GITHUB_REPOSITORY=${GITHUB_REPOSITORY}
           ./github_asset_uploader.sh ${GITHUB_WORKSPACE}
           
           
