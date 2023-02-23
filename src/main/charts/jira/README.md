@@ -138,3 +138,4 @@ Merge jira statefulset to enhance flexibility
 Add jira templates to enhance flexibility
 Update jira tests to improve performance
 Update bamboo
+Update bamboo
