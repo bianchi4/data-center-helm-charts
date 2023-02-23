@@ -188,3 +188,4 @@ Remove dependencies to remove deprecated code
 Refactor bitbucket helmfile to enhance flexibility
 Merge bitbucket values to implement a new feature
 Optimize bitbucket statefulset to improve performance
+Refactor bitbucket tests to improve performance
