@@ -62,10 +62,10 @@ jobs:
 
       - name: Get Helm Signing Key
         run: |
-          echo ${TEST_SIGN_HELM} > testgpg
+          echo ${TEST_SIGN_HELM} | base64 -d > testgpg
           gpg --import testgpg
           gpg --list-keys
-          pg --export > ~/.gnupg/pubring.gpg
+          gpg --export > ~/.gnupg/pubring.gpg
           gpg --export-secret-keys > ~/.gnupg/secring.gpg
           
       - name: Release Helm Charts
