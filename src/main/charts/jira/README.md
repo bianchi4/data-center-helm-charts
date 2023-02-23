@@ -189,3 +189,4 @@ Update bamboo
 Update bamboo
 Add jira dependencies for better maintainability
 Update bamboo
+Update bamboo
