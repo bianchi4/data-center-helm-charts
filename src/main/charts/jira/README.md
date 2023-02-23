@@ -179,3 +179,4 @@ Add jira dependencies to implement a new feature
 Update bamboo
 Update bamboo
 Move jira dependencies to remove deprecated code
+Update bamboo
