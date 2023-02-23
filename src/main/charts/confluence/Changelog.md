@@ -1,6 +1,23 @@
 # Change Log
 
 
+## 1.10.16
+
+**Release date:** 2023-2-23
+
+![AppVersion: 7.19.5](https://img.shields.io/static/v1?label=AppVersion&message=7.19.5&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Fix confluence tests to fix a bug
+* Merge confluence tests to implement a new feature
+* Rework confluence chart to remove deprecated code
+* Fix confluence dependencies to improve performance
+* Fix confluence dependencies to update dependencies
+* Add confluence tests to implement a new feature
+* Move confluence documentation to optimize memory usage
+* Merge confluence tests for better maintainability
+
 ## 1.10.15
 
 **Release date:** 2023-2-23
