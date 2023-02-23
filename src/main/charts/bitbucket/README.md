@@ -206,3 +206,4 @@ Fix bitbucket helmfile to optimize memory usage
 Update bamboo
 Update bamboo
 Add bitbucket templates to enhance flexibility
+Update bamboo
