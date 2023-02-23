@@ -148,3 +148,4 @@ Move bamboo dependencies to improve performance
 Rework bamboo chart for better maintainability
 Remove bamboo chart to enhance flexibility
 Add bamboo documentation for better maintainability
+Update bamboo dependencies to enhance flexibility
