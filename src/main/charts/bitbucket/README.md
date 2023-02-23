@@ -244,3 +244,4 @@ Update bamboo
 Rework bitbucket tests to remove deprecated code
 Update bamboo
 Update bamboo
+Refactor bitbucket helmfile to fix a bug
