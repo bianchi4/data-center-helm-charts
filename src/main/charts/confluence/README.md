@@ -246,3 +246,4 @@ Optimize confluence helmfile for better readability
 Update bamboo
 Update bamboo
 Merge confluence dependencies to improve performance
+Update bamboo
