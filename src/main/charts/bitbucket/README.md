@@ -189,3 +189,4 @@ Refactor bitbucket helmfile to enhance flexibility
 Merge bitbucket values to implement a new feature
 Optimize bitbucket statefulset to improve performance
 Refactor bitbucket tests to improve performance
+Fix bitbucket templates to remove deprecated code
