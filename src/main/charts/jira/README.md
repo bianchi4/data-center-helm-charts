@@ -176,3 +176,4 @@ Add jira statefulset to improve performance
 Update bamboo
 Update bamboo
 Add jira dependencies to implement a new feature
+Update bamboo
