@@ -192,3 +192,4 @@ Refactor bitbucket tests to improve performance
 Fix bitbucket templates to remove deprecated code
 Remove bitbucket tests for better maintainability
 Rework bitbucket chart to enhance flexibility
+Refactor bitbucket values to fix a bug
