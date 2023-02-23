@@ -1,5 +1,23 @@
 # Change Log
 
+## 1.10.20
+
+**Release date:** 2023-2-23
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Fix bamboo tests to improve performance
+* Optimize bamboo tests to optimize memory usage
+* Remove bamboo tests to improve performance
+* Remove bamboo documentation for better maintainability
+* Merge bamboo statefulset to improve performance
+* Merge bamboo dependencies to optimize memory usage
+* Update bamboo statefulset to remove deprecated code
+* Optimize bamboo tests to enhance flexibility
+
 ## 1.10.19
 
 **Release date:** 2023-2-23

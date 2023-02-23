@@ -1,5 +1,23 @@
 # Change Log
 
+## 1.10.20
+
+**Release date:** 2023-2-23
+
+![AppVersion: 9.4.3](https://img.shields.io/static/v1?label=AppVersion&message=9.4.3&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Move jira documentation to remove deprecated code
+* Refactor jira values for better maintainability
+* Optimize jira dependencies for better maintainability
+* Move jira statefulset to fix a bug
+* Fix jira dependencies to update dependencies
+* Update jira chart to enhance flexibility
+* Refactor jira chart to implement a new feature
+* Merge jira values for better maintainability
+
 ## 1.10.19
 
 **Release date:** 2023-2-23
