@@ -129,3 +129,4 @@ Move templates to optimize memory usage
 Merge helmfile for better maintainability
 Refactor values to optimize memory usage
 Move jira values to enhance flexibility
+Optimize jira dependencies to remove deprecated code
