@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      TEST_SIGN_HELM: ${{secrets.TEST_SIGN_HELM }}
-      HELM_PUB_KEY: ${{secrets.HELM_PUB_KEY }}
+      HELM_SIGNING_KEY: ${{secrets.TEST_SIGN_HELM }}
+      GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}
       PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     steps:
       - name: Checkout
@@ -63,12 +63,11 @@ jobs:
 
       - name: Get Helm Signing Key
         run: |
-          echo ${TEST_SIGN_HELM} | base64 -d > testgpg
-          echo ${HELM_PUB_KEY} | base64 -d > public_key
-          gpg --import testgpg
-          gpg --list-keys
+          echo ${HELM_SIGNING_KEY} | base64 -d > helm_key
+          gpg --import helm_key
           gpg --export > ~/.gnupg/pubring.gpg
           gpg --export-secret-keys > ~/.gnupg/secring.gpg
+          gpg --output src/main/scripts/helm_key.pub --export yzhang@atlassian.com
           
       - name: Release Helm Charts
         run: |
@@ -80,3 +79,12 @@ jobs:
           git commit -m "Update index.yaml post release"
           git push origin update-index-yaml-${GITHUB_RUN_ID}
           gh pr create --title "Update index.yaml" --body "Update index.yaml after release" --base main --head update-index-yaml-${GITHUB_RUN_ID}
+      
+      - name: Upload Public Key To Release Assets
+        run: |
+          cd src/main/scripts
+          ./github_asset_uploader.sh ${GITHUB_WORKSPACE}
+          
+          
+          
+          

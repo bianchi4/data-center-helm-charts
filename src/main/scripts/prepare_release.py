@@ -13,10 +13,10 @@ products = ["bamboo", "bamboo-agent",
             "bitbucket", "confluence", "crowd", "jira"]
 prodbase = "src/main/charts"
 
-def get_chart_versions():
+def get_chart_versions(path=prodbase):
     versions = {}
     for prod in products:
-        proddir = f"{prodbase}/{prod}"
+        proddir = f"{path}/{prod}"
         chartfile = f"{proddir}/Chart.yaml"
 
         with open(chartfile, 'r') as chart:
@@ -26,6 +26,7 @@ def get_chart_versions():
         versions[prod] = {}
         versions[prod]['kubeVersion'] = chartyaml['kubeVersion']
         versions[prod]['appVersion'] = chartyaml['appVersion']
+        versions[prod]['version'] = chartyaml['version']
 
         log.info(f"Product {prod} versions: {versions[prod]['kubeVersion']}, {versions[prod]['appVersion']}")
 
