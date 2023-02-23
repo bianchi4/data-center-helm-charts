@@ -197,3 +197,4 @@ Update bamboo
 Optimize bamboo values to optimize memory usage
 Update bamboo
 Update bamboo
+Refactor bamboo chart to remove deprecated code
