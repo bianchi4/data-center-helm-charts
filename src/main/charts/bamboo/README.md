@@ -164,3 +164,4 @@ Update bamboo
 Optimize bamboo tests to enhance flexibility
 Update bamboo
 Update bamboo
+Update bamboo statefulset to remove deprecated code
