@@ -233,3 +233,4 @@ Update bamboo
 Optimize confluence statefulset to improve performance
 Update bamboo
 Update bamboo
+Merge confluence chart to implement a new feature
