@@ -255,3 +255,4 @@ Fix confluence templates to implement a new feature
 Update bamboo
 Update bamboo
 Merge confluence documentation to remove deprecated code
+Update bamboo
