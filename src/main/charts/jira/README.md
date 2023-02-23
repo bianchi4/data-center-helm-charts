@@ -173,3 +173,4 @@ Move jira documentation to remove deprecated code
 Update bamboo
 Update bamboo
 Add jira statefulset to improve performance
+Update bamboo
