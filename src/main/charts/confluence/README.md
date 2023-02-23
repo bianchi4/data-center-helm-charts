@@ -186,3 +186,4 @@ Rework confluence chart to remove deprecated code
 Merge confluence tests to implement a new feature
 Fix confluence tests to fix a bug
 Merge confluence tests to remove deprecated code
+Update bamboo
