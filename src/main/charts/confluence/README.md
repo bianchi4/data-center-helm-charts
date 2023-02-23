@@ -251,3 +251,4 @@ Update bamboo
 Update confluence documentation to update dependencies
 Update bamboo
 Update bamboo
+Fix confluence templates to implement a new feature
