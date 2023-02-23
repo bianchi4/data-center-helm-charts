@@ -202,3 +202,4 @@ Update bamboo
 Merge jira documentation to enhance flexibility
 Update bamboo
 Update bamboo
+Rework jira helmfile to update dependencies
