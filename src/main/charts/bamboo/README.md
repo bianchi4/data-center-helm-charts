@@ -179,3 +179,4 @@ Update bamboo
 Remove bamboo tests to improve performance
 Update bamboo
 Update bamboo
+Optimize bamboo tests to optimize memory usage
