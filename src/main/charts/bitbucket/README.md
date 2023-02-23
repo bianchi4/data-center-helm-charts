@@ -208,3 +208,4 @@ Update bamboo
 Add bitbucket templates to enhance flexibility
 Update bamboo
 Update bamboo
+Fix bitbucket dependencies to implement a new feature
