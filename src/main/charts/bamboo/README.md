@@ -215,3 +215,4 @@ Update bamboo
 Add bamboo helmfile for better readability
 Update bamboo
 Update bamboo
+Fix bamboo chart for better maintainability
