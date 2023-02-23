@@ -164,3 +164,4 @@ Move jira statefulset to fix a bug
 Update bamboo
 Update bamboo
 Optimize jira dependencies for better maintainability
+Update bamboo
