@@ -148,3 +148,4 @@ Update bamboo
 Merge jira values to update dependencies
 Update bamboo
 Update bamboo
+Merge jira values for better maintainability
