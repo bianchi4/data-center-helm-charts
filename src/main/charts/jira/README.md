@@ -161,3 +161,4 @@ Fix jira dependencies to update dependencies
 Update bamboo
 Update bamboo
 Move jira statefulset to fix a bug
+Update bamboo
