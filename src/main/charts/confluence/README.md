@@ -188,3 +188,4 @@ Fix confluence tests to fix a bug
 Merge confluence tests to remove deprecated code
 Update bamboo
 Update bamboo
+Refactor confluence chart for better maintainability
