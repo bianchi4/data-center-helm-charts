@@ -9,6 +9,7 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       TEST_SIGN_HELM: ${{secrets.TEST_SIGN_HELM }}
+      HELM_PUB_KEY: ${{secrets.HELM_PUB_KEY }}
       PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
     steps:
       - name: Checkout
@@ -63,6 +64,7 @@ jobs:
       - name: Get Helm Signing Key
         run: |
           echo ${TEST_SIGN_HELM} | base64 -d > testgpg
+          echo ${HELM_PUB_KEY} | base64 -d > public_key
           gpg --import testgpg
           gpg --list-keys
           gpg --export > ~/.gnupg/pubring.gpg
