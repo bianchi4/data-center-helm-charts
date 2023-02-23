@@ -139,3 +139,4 @@ Add jira templates to enhance flexibility
 Update jira tests to improve performance
 Update bamboo
 Update bamboo
+Update jira statefulset to implement a new feature
