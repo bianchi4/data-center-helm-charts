@@ -28,7 +28,7 @@ for chart in "$CHARTS_SRC_DIR"/*/
   do
     echo "Packaging chart $chart"
     helm package --sign --key 'Yifei Zhang' --keyring ~/.gnupg/secring.gpg "$chart" --destination "$PACKAGE_DIR"
-    cp public_key "$PACKAGE_DIR"/${chart_pub}-1.10.22.tgz.key
+    cp public_key "$PACKAGE_DIR"/${chart_pub}_pub_key.tgz
   done
 
 echo "Uploading chart packages as Github releases"
