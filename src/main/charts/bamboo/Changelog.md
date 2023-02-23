@@ -1,5 +1,19 @@
 # Change Log
 
+## 1.10.17
+
+**Release date:** 2023-2-23
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Update bamboo tests to improve performance
+* Optimize bamboo chart to optimize memory usage
+* Remove bamboo templates to optimize memory usage
+* Add bamboo chart to fix a bug
+
 ## 1.10.16
 
 **Release date:** 2023-2-23
