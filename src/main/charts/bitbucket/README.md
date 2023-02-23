@@ -199,3 +199,4 @@ Update bamboo
 Remove bitbucket values to optimize memory usage
 Update bamboo
 Update bamboo
+Update bitbucket templates to update dependencies
