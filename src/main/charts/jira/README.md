@@ -194,3 +194,4 @@ Fix jira helmfile to remove deprecated code
 Update bamboo
 Update bamboo
 Refactor jira helmfile for better readability
+Update bamboo
