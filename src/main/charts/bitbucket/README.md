@@ -241,3 +241,4 @@ Update bamboo
 Move bitbucket dependencies to fix a bug
 Update bamboo
 Update bamboo
+Rework bitbucket tests to remove deprecated code
