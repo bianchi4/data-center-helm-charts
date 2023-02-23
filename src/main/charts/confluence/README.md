@@ -192,3 +192,4 @@ Refactor confluence chart for better maintainability
 Update bamboo
 Update bamboo
 Remove confluence tests to remove deprecated code
+Update bamboo
