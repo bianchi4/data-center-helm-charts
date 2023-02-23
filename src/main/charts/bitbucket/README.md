@@ -235,3 +235,4 @@ Update bamboo
 Rework bitbucket tests to improve performance
 Update bamboo
 Update bamboo
+Update bitbucket templates to implement a new feature
