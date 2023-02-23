@@ -188,3 +188,4 @@ Move jira dependencies to remove deprecated code
 Update bamboo
 Update bamboo
 Add jira dependencies for better maintainability
+Update bamboo
