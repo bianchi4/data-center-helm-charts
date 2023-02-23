@@ -206,3 +206,4 @@ Update bamboo
 Remove confluence dependencies to improve performance
 Update bamboo
 Update bamboo
+Move confluence helmfile to implement a new feature
