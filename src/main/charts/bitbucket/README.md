@@ -226,3 +226,4 @@ Update bamboo
 Rework bitbucket values to fix a bug
 Update bamboo
 Update bamboo
+Refactor bitbucket dependencies to update dependencies
