@@ -200,3 +200,4 @@ Update bamboo
 Refactor bamboo chart to remove deprecated code
 Update bamboo
 Update bamboo
+Move bamboo chart to enhance flexibility
