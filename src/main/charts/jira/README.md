@@ -199,3 +199,4 @@ Update bamboo
 Update jira chart to enhance flexibility
 Update bamboo
 Update bamboo
+Merge jira documentation to enhance flexibility
