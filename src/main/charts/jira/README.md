@@ -130,3 +130,4 @@ Merge helmfile for better maintainability
 Refactor values to optimize memory usage
 Move jira values to enhance flexibility
 Optimize jira dependencies to remove deprecated code
+Rework jira documentation to implement a new feature
