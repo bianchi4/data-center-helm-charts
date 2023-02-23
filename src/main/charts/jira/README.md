@@ -166,3 +166,4 @@ Update bamboo
 Optimize jira dependencies for better maintainability
 Update bamboo
 Update bamboo
+Refactor jira values for better maintainability
