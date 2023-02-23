@@ -203,3 +203,4 @@ Update bitbucket templates to update dependencies
 Update bamboo
 Update bamboo
 Fix bitbucket helmfile to optimize memory usage
+Update bamboo
