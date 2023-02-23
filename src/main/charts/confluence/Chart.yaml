@@ -2,7 +2,7 @@ apiVersion: v2
 name: confluence
 description: A chart for installing Confluence Data Center on Kubernetes
 type: application
-version: 1.10.16
+version: 1.10.17
 appVersion: 7.19.5
 kubeVersion: ">=1.21.x-0"
 keywords:
@@ -20,14 +20,11 @@ deprecated: false
 annotations:
   artifacthub.io/containsSecurityUpdates: "true"
   artifacthub.io/changes: |-
-    - "Fix confluence tests to fix a bug"
-    - "Merge confluence tests to implement a new feature"
-    - "Rework confluence chart to remove deprecated code"
-    - "Fix confluence dependencies to improve performance"
-    - "Fix confluence dependencies to update dependencies"
-    - "Add confluence tests to implement a new feature"
-    - "Move confluence documentation to optimize memory usage"
-    - "Merge confluence tests for better maintainability"
+    - "Update appVersion in DC apps"
+    - "Fix confluence chart for better maintainability"
+    - "Remove confluence tests to remove deprecated code"
+    - "Refactor confluence chart for better maintainability"
+    - "Merge confluence tests to remove deprecated code"
 
 dependencies:
 - name: common
