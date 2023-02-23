@@ -177,3 +177,4 @@ Merge documentation to implement a new feature
 Optimize templates to improve performance
 Remove templates for better readability
 Move chart to update dependencies
+Merge confluence tests for better maintainability
