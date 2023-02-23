@@ -179,3 +179,4 @@ Remove templates for better readability
 Move chart to update dependencies
 Merge confluence tests for better maintainability
 Move confluence documentation to optimize memory usage
+Add confluence tests to implement a new feature
