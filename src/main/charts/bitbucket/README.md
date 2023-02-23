@@ -224,3 +224,4 @@ Merge bitbucket templates to optimize memory usage
 Update bamboo
 Update bamboo
 Rework bitbucket values to fix a bug
+Update bamboo
