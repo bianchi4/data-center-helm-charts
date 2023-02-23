@@ -238,3 +238,4 @@ Update bamboo
 Update bitbucket templates to implement a new feature
 Update bamboo
 Update bamboo
+Move bitbucket dependencies to fix a bug
