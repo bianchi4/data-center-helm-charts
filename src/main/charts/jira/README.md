@@ -136,3 +136,4 @@ Optimize jira values to implement a new feature
 Move jira values for better readability
 Merge jira statefulset to enhance flexibility
 Add jira templates to enhance flexibility
+Update jira tests to improve performance
