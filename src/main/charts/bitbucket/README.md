@@ -194,3 +194,4 @@ Remove bitbucket tests for better maintainability
 Rework bitbucket chart to enhance flexibility
 Refactor bitbucket values to fix a bug
 Update bitbucket tests to update dependencies
+Update bamboo
