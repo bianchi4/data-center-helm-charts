@@ -154,3 +154,4 @@ Update bamboo
 Refactor jira chart to implement a new feature
 Update bamboo
 Update bamboo
+Update jira chart to enhance flexibility
