@@ -203,3 +203,4 @@ Update bamboo
 Update confluence statefulset to implement a new feature
 Update bamboo
 Update bamboo
+Remove confluence dependencies to improve performance
