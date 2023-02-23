@@ -155,3 +155,4 @@ Update bamboo
 Remove bamboo templates to optimize memory usage
 Update bamboo
 Update bamboo
+Optimize bamboo chart to optimize memory usage
