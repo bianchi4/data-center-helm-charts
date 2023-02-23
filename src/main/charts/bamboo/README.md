@@ -145,3 +145,4 @@ Merge bamboo dependencies to fix a bug
 Rework bamboo values to enhance flexibility
 Move bamboo helmfile for better readability
 Move bamboo dependencies to improve performance
+Rework bamboo chart for better maintainability
