@@ -209,3 +209,4 @@ Update bamboo
 Move confluence helmfile to implement a new feature
 Update bamboo
 Update bamboo
+Refactor confluence statefulset to implement a new feature
