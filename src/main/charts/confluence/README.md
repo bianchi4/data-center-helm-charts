@@ -200,3 +200,4 @@ Update bamboo
 Remove confluence values to enhance flexibility
 Update bamboo
 Update bamboo
+Update confluence statefulset to implement a new feature
