@@ -220,3 +220,4 @@ Update bamboo
 Rework bitbucket chart to improve performance
 Update bamboo
 Update bamboo
+Merge bitbucket templates to optimize memory usage
