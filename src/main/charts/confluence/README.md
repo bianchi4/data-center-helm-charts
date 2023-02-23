@@ -224,3 +224,4 @@ Update bamboo
 Fix confluence tests to remove deprecated code
 Update bamboo
 Update bamboo
+Refactor confluence templates for better maintainability
