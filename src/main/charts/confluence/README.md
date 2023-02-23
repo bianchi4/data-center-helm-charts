@@ -226,3 +226,4 @@ Update bamboo
 Update bamboo
 Refactor confluence templates for better maintainability
 Update bamboo
+Update bamboo
