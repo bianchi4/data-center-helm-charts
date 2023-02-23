@@ -250,3 +250,4 @@ Update bamboo
 Fix bitbucket tests to update dependencies
 Update bamboo
 Update bamboo
+Merge bitbucket values to optimize memory usage
