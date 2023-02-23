@@ -182,3 +182,4 @@ Move jira dependencies to remove deprecated code
 Update bamboo
 Update bamboo
 Merge jira helmfile for better maintainability
+Update bamboo
