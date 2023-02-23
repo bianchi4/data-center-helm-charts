@@ -5,7 +5,7 @@ kind: ServiceAccount
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
@@ -17,7 +17,7 @@ kind: ConfigMap
 metadata:
   name: unittest-bamboo-jvm-config
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
@@ -34,7 +34,7 @@ kind: Service
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
@@ -57,7 +57,7 @@ kind: StatefulSet
 metadata:
   name: unittest-bamboo
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
@@ -72,7 +72,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: 4f0e3da0e3a11eeb57f8008e1fdfd2d2cc7cc282e1b7f780b2fa66e08320418a
+        checksum/config-jvm: 83c04fe34d8f9e80b1a3c3ee3d08aa916282a919f1b0afdad05012d0d4e6fc28
       labels:
         app.kubernetes.io/name: bamboo
         app.kubernetes.io/instance: unittest-bamboo
@@ -206,7 +206,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
@@ -250,7 +250,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: bamboo-1.10.21
+    helm.sh/chart: bamboo-1.10.22
     app.kubernetes.io/name: bamboo
     app.kubernetes.io/instance: unittest-bamboo
     app.kubernetes.io/version: "9.2.2"
