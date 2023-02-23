@@ -228,3 +228,4 @@ Refactor confluence templates for better maintainability
 Update bamboo
 Update bamboo
 Update confluence helmfile to optimize memory usage
+Update bamboo
