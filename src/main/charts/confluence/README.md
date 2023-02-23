@@ -248,3 +248,4 @@ Update bamboo
 Merge confluence dependencies to improve performance
 Update bamboo
 Update bamboo
+Update confluence documentation to update dependencies
