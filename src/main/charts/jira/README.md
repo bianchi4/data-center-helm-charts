@@ -205,3 +205,4 @@ Update bamboo
 Rework jira helmfile to update dependencies
 Update bamboo
 Update bamboo
+Rework jira helmfile for better readability
