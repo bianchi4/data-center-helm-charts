@@ -262,3 +262,4 @@ Update bamboo
 Add bitbucket documentation for better readability
 Update bamboo
 Update bamboo
+Rework bitbucket tests to remove deprecated code
