@@ -174,3 +174,4 @@ Merge bamboo statefulset to improve performance
 Update bamboo
 Update bamboo
 Remove bamboo documentation for better maintainability
+Update bamboo
