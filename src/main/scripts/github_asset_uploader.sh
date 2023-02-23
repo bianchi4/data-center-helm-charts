@@ -1,10 +1,25 @@
 #!/bin/bash
 set -e
 
-PRODUCTS=(bamboo bamboo-agent bitbucket confluence crowd jira)
-RELEASE_VERSION=$1
+if [[ -z $GH_TOKEN ]]; then
+  echo "Must supply a github token. Export GH_TOKEN env variable in the shell where the script is executed"
+  exit 1
+fi
 
-echo "[INFO]: Helm chart version is: ${RELEASE_VERSION}"
+RELEASE_VERSION=$1
+if [[ -z $RELEASE_VERSION ]]; then
+  echo "Must specify release version, e.g. 1.10.2"
+  exit 1
+fi
+
+if [[ -z $GITHUB_REPOSITORY ]]; then
+  echo "GITHUB_REPOSITORY env var is not set. Using the default atlassian/data/center=helm-charts"
+  export GITHUB_REPOSITORY="atlassian/data/center=helm-charts"
+fi
+
+PRODUCTS=(bamboo bamboo-agent bitbucket confluence crowd jira)
+
+echo "[INFO]: Release version is: ${RELEASE_VERSION}"
 
 for PRODUCT in ${PRODUCTS[@]}; do
   
@@ -21,6 +36,7 @@ for PRODUCT in ${PRODUCTS[@]}; do
        -H "Content-Type: application/octet-stream" \
        https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=helm_key.pub \
        --data-binary "@helm_key.pub"
+  echo -e "\n"
 done
 
 
