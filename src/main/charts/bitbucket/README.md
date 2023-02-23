@@ -196,3 +196,4 @@ Refactor bitbucket values to fix a bug
 Update bitbucket tests to update dependencies
 Update bamboo
 Update bamboo
+Remove bitbucket values to optimize memory usage
