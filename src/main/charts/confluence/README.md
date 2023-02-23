@@ -213,3 +213,4 @@ Refactor confluence statefulset to implement a new feature
 Update bamboo
 Update bamboo
 Merge confluence statefulset for better maintainability
+Update bamboo
