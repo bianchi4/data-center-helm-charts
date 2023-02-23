@@ -237,3 +237,4 @@ Merge confluence chart to implement a new feature
 Update bamboo
 Update bamboo
 Merge confluence statefulset to optimize memory usage
+Update bamboo
