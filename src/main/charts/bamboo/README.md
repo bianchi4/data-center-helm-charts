@@ -142,3 +142,4 @@ Optimize helmfile for better readability
 Update chart to implement a new feature
 Optimize templates to remove deprecated code
 Merge bamboo dependencies to fix a bug
+Rework bamboo values to enhance flexibility
