@@ -5,7 +5,7 @@ kind: ServiceAccount
 metadata:
   name: unittest-crowd
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -17,7 +17,7 @@ kind: ConfigMap
 metadata:
   name: unittest-crowd-jvm-config
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -37,7 +37,7 @@ kind: Service
 metadata:
   name: unittest-crowd
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -64,7 +64,7 @@ kind: StatefulSet
 metadata:
   name: unittest-crowd
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -79,7 +79,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: eae3516aaf520ba042539a9a00c70a755eecfb419ac98e93d290463f6b525aa9
+        checksum/config-jvm: a8834de85b15557e87ed5dfcc7d1518929b5ca53ab0def53ca0e0da3362b84e2
       labels:
         app.kubernetes.io/name: crowd
         app.kubernetes.io/instance: unittest-crowd
@@ -177,7 +177,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -208,7 +208,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -245,7 +245,7 @@ kind: Job
 metadata:
   name: unittest-crowd-nfs-fixer
   labels:
-    helm.sh/chart: crowd-1.10.18
+    helm.sh/chart: crowd-1.10.19
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
     app.kubernetes.io/version: "5.1.2"
@@ -258,7 +258,7 @@ spec:
     metadata:
       name: unittest-crowd-nfs-fixer
       labels:
-        helm.sh/chart: crowd-1.10.18
+        helm.sh/chart: crowd-1.10.19
         app.kubernetes.io/name: crowd
         app.kubernetes.io/instance: unittest-crowd
         app.kubernetes.io/version: "5.1.2"
