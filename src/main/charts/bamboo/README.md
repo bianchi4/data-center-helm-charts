@@ -185,3 +185,4 @@ Update bamboo
 Fix bamboo tests to improve performance
 Update bamboo
 Update bamboo
+Refactor bamboo templates for better readability
