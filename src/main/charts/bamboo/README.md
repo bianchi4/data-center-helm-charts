@@ -171,3 +171,4 @@ Merge bamboo dependencies to optimize memory usage
 Update bamboo
 Update bamboo
 Merge bamboo statefulset to improve performance
+Update bamboo
