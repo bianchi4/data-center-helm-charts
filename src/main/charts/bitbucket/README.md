@@ -247,3 +247,4 @@ Update bamboo
 Refactor bitbucket helmfile to fix a bug
 Update bamboo
 Update bamboo
+Fix bitbucket tests to update dependencies
