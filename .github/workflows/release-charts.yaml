@@ -84,7 +84,8 @@ jobs:
         run: |
           cd src/main/scripts
           export GITHUB_REPOSITORY=${GITHUB_REPOSITORY}
-          ./github_asset_uploader.sh ${GITHUB_WORKSPACE}
+          export RELEASE_VERSION=$(python3 -W ignore -c "import prepare_release; print (prepare_release.get_chart_versions(\"$1/src/main/charts\"))" | sed "s/\'/\"/g" | python -c 'import sys, json; print (json.load(sys.stdin)["bamboo"]["version"])')
+          ./github_asset_uploader.sh ${RELEASE_VERSION}
           
           
           

@@ -2,8 +2,7 @@
 set -e
 
 PRODUCTS=(bamboo bamboo-agent bitbucket confluence crowd jira)
-python3 -W ignore -c "import prepare_release; print (prepare_release.get_chart_versions(\"$1/src/main/charts\"))" | sed "s/\'/\"/g"
-RELEASE_VERSION=$(python3 -W ignore -c "import prepare_release; print (prepare_release.get_chart_versions(\"$1/src/main/charts\"))" | sed "s/\'/\"/g" | python -c 'import sys, json; print (json.load(sys.stdin)["bamboo"]["version"])')
+RELEASE_VERSION=$1
 
 echo "[INFO]: Helm chart version is: ${RELEASE_VERSION}"
 
