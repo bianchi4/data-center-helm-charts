@@ -194,3 +194,4 @@ Update bamboo
 Refactor bamboo templates to implement a new feature
 Update bamboo
 Update bamboo
+Optimize bamboo values to optimize memory usage
