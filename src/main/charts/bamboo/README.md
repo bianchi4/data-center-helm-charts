@@ -182,3 +182,4 @@ Update bamboo
 Optimize bamboo tests to optimize memory usage
 Update bamboo
 Update bamboo
+Fix bamboo tests to improve performance
