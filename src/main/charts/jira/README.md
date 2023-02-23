@@ -145,3 +145,4 @@ Update bamboo
 Remove jira helmfile to enhance flexibility
 Update bamboo
 Update bamboo
+Merge jira values to update dependencies
