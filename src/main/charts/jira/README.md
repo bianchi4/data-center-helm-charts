@@ -191,3 +191,4 @@ Add jira dependencies for better maintainability
 Update bamboo
 Update bamboo
 Fix jira helmfile to remove deprecated code
+Update bamboo
