@@ -239,3 +239,4 @@ Update bamboo
 Merge confluence statefulset to optimize memory usage
 Update bamboo
 Update bamboo
+Remove confluence helmfile to optimize memory usage
