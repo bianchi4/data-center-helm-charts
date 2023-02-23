@@ -191,3 +191,4 @@ Update bamboo
 Fix bamboo templates for better readability
 Update bamboo
 Update bamboo
+Refactor bamboo templates to implement a new feature
