@@ -73,7 +73,6 @@ jobs:
           aws-region: ${{ secrets.HELM_SIGNING_KEY_AWS_REGION }}
           role-to-assume: ${{ secrets.HELM_SIGNING_KEY_AWS_IAM_ROLE }}
           role-session-name: HelmSignSession
-          role-duration-seconds: 120
 
       - name: Get Helm Signing Key
         run: |
