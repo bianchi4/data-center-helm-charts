@@ -280,3 +280,4 @@ Update bamboo
 Optimize bitbucket chart to fix a bug
 Update bamboo
 Update bamboo
+Refactor bitbucket tests to update dependencies
