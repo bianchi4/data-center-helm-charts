@@ -222,3 +222,4 @@ Update bamboo
 Update bamboo
 Rework jira chart to update dependencies
 Update bamboo
+Update bamboo
