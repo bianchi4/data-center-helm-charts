@@ -310,3 +310,4 @@ Update bamboo
 Add bitbucket statefulset for better maintainability
 Update bamboo
 Update bamboo
+Refactor bitbucket statefulset to fix a bug
