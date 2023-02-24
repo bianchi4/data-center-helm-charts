@@ -1,5 +1,19 @@
 # Change Log
 
+## 1.10.29
+
+**Release date:** 2023-2-24
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Remove bamboo chart to implement a new feature
+* Update bamboo dependencies to improve performance
+* Fix bamboo dependencies to improve performance
+* Remove bamboo values to update dependencies
+
 ## 1.10.28
 
 **Release date:** 2023-2-24
