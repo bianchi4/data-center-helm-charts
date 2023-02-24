@@ -297,3 +297,4 @@ Move confluence dependencies to update dependencies
 Update bamboo
 Update bamboo
 Add confluence templates to optimize memory usage
+Update bamboo
