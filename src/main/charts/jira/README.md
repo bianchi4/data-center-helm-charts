@@ -253,3 +253,4 @@ Update bamboo
 Rework jira tests to update dependencies
 Update bamboo
 Update bamboo
+Fix jira dependencies to improve performance
