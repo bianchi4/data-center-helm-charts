@@ -5,7 +5,7 @@ kind: ServiceAccount
 metadata:
   name: unittest-confluence
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -17,7 +17,7 @@ kind: ConfigMap
 metadata:
   name: unittest-confluence-jvm-config
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -62,7 +62,7 @@ kind: Service
 metadata:
   name: unittest-confluence-synchrony
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence-synchrony
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -89,7 +89,7 @@ kind: Service
 metadata:
   name: unittest-confluence
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -116,7 +116,7 @@ kind: StatefulSet
 metadata:
   name: unittest-confluence-synchrony
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence-synchrony
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -197,7 +197,7 @@ kind: StatefulSet
 metadata:
   name: unittest-confluence
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -212,7 +212,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config-jvm: 0072f8ccafebd1a16fea4345bb1efddc140483349c050d1307239ad541d406ed
+        checksum/config-jvm: 8e3adb78df13a6fddad0212ed13e4051bc058adff0cf79d3b599fa139cb18c7c
       labels:
         app.kubernetes.io/name: confluence
         app.kubernetes.io/instance: unittest-confluence
@@ -319,7 +319,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
@@ -350,7 +350,7 @@ metadata:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
   labels:
-    helm.sh/chart: confluence-1.10.27
+    helm.sh/chart: confluence-1.10.28
     app.kubernetes.io/name: confluence
     app.kubernetes.io/instance: unittest-confluence
     app.kubernetes.io/version: "7.19.5"
