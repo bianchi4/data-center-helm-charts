@@ -2,7 +2,7 @@ apiVersion: v2
 name: bamboo-agent
 description: A chart for installing Bamboo Data Center remote agents on Kubernetes
 type: application
-version: 1.10.24
+version: 1.10.25
 appVersion: 9.2.1
 kubeVersion: ">=1.21.x-0"
 keywords:
