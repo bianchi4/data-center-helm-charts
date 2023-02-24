@@ -265,3 +265,4 @@ Update bamboo
 Rework bitbucket tests to remove deprecated code
 Update bamboo
 Update bamboo
+Move bitbucket values to improve performance
