@@ -66,17 +66,8 @@ jobs:
       - name: Execute helm dependency update for jira chart
         run: helm dependency update src/main/charts/jira
 
-      # - name: Configure AWS Credentials
-      #   uses: aws-actions/configure-aws-credentials@master
-      #   with:
-      #     aws-region: ${{ secrets.HELM_SIGNING_KEY_AWS_REGION }}
-      #     role-to-assume: ${{ secrets.HELM_SIGNING_KEY_AWS_IAM_ROLE }}
-      #     role-session-name: HelmSignSession
-      #     role-duration-seconds: 120
-
       - name: Get Helm Signing Key
         run: |
-# aws secretsmanager get-secret-value --secret-id ${{ .secrets.HELM_SIGNING_KEY_SECRET_ID }} --query 'SecretBinary' --output text --region ${{ secrets.HELM_SIGNING_KEY_AWS_REGION }} | base64 --decode > helm_key
           echo ${HELM_SIGNING_KEY} | base64 -d > helm_key
           gpg --import helm_key
           gpg --export > ~/.gnupg/pubring.gpg
