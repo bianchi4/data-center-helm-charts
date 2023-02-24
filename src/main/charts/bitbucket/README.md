@@ -290,3 +290,4 @@ Fix bitbucket values to implement a new feature
 Update bamboo
 Update bamboo
 Update bitbucket values to enhance flexibility
+Update bamboo
