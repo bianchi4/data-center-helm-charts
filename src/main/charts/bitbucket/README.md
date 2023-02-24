@@ -271,3 +271,4 @@ Update bamboo
 Fix bitbucket tests for better maintainability
 Update bamboo
 Update bamboo
+Optimize bitbucket chart to remove deprecated code
