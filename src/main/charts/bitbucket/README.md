@@ -302,3 +302,4 @@ Merge bitbucket helmfile to improve performance
 Update bamboo
 Update bamboo
 Update bitbucket statefulset to update dependencies
+Update bamboo
