@@ -244,3 +244,4 @@ Update bamboo
 Merge jira dependencies to enhance flexibility
 Update bamboo
 Update bamboo
+Remove jira values to update dependencies
