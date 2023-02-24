@@ -238,3 +238,4 @@ Update bamboo
 Merge jira dependencies to optimize memory usage
 Update bamboo
 Update bamboo
+Remove jira tests for better readability
