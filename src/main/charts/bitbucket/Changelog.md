@@ -1,5 +1,19 @@
 # Change Log
 
+## 1.10.25
+
+**Release date:** 2023-2-24
+
+![AppVersion: 7.21.11](https://img.shields.io/static/v1?label=AppVersion&message=7.21.11&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Rework bitbucket documentation to fix a bug
+* Optimize bitbucket chart to remove deprecated code
+* Fix bitbucket tests for better maintainability
+* Move bitbucket values to improve performance
+
 ## 1.10.24
 
 **Release date:** 2023-2-23

@@ -1,5 +1,19 @@
 # Change Log
 
+## 1.10.25
+
+**Release date:** 2023-2-24
+
+![AppVersion: 9.4.3](https://img.shields.io/static/v1?label=AppVersion&message=9.4.3&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Merge jira chart to implement a new feature
+* Update jira chart to enhance flexibility
+* Remove jira statefulset to fix a bug
+* Fix jira dependencies to enhance flexibility
+
 ## 1.10.24
 
 **Release date:** 2023-2-23
