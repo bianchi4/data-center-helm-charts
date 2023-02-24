@@ -1,6 +1,20 @@
 # Change Log
 
 
+## 1.10.26
+
+**Release date:** 2023-2-24
+
+![AppVersion: 7.19.5](https://img.shields.io/static/v1?label=AppVersion&message=7.19.5&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Fix confluence helmfile to optimize memory usage
+* Remove confluence statefulset to enhance flexibility
+* Add confluence statefulset to enhance flexibility
+* Remove confluence statefulset to implement a new feature
+
 ## 1.10.25
 
 **Release date:** 2023-2-24
