@@ -274,3 +274,4 @@ Update bamboo
 Optimize bitbucket chart to remove deprecated code
 Update bamboo
 Update bamboo
+Rework bitbucket documentation to fix a bug
