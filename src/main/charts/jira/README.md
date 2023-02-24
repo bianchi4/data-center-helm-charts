@@ -229,3 +229,4 @@ Update bamboo
 Refactor jira helmfile to implement a new feature
 Update bamboo
 Update bamboo
+Remove jira dependencies to improve performance
