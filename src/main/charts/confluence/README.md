@@ -260,3 +260,4 @@ Update bamboo
 Refactor confluence dependencies to enhance flexibility
 Update bamboo
 Update bamboo
+Fix confluence tests to improve performance
