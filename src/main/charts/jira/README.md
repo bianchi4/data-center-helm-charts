@@ -211,3 +211,4 @@ Update bamboo
 Fix jira dependencies to enhance flexibility
 Update bamboo
 Update bamboo
+Remove jira statefulset to fix a bug
