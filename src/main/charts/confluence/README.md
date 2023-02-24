@@ -288,3 +288,4 @@ Update confluence statefulset to improve performance
 Update bamboo
 Update bamboo
 Refactor confluence dependencies to implement a new feature
+Update bamboo
