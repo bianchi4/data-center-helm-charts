@@ -208,3 +208,4 @@ Update bamboo
 Rework jira helmfile for better readability
 Update bamboo
 Update bamboo
+Fix jira dependencies to enhance flexibility
