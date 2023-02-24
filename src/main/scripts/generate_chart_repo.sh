@@ -22,8 +22,6 @@ then
   exit 1
 fi
 
-export HELM_SIGNING_KEY_ID="${HELM_SIGNING_KEY_ID:-"Atlassian DC Helm Charts"}"
-
 rm -rf "$PACKAGE_DIR"
 
 for chart in "$CHARTS_SRC_DIR"/*/
