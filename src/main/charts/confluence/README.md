@@ -302,3 +302,4 @@ Update bamboo
 Move confluence statefulset to remove deprecated code
 Update bamboo
 Update bamboo
+Fix confluence templates to implement a new feature
