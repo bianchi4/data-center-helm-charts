@@ -291,3 +291,4 @@ Refactor confluence dependencies to implement a new feature
 Update bamboo
 Update bamboo
 Rework confluence helmfile to optimize memory usage
+Update bamboo
