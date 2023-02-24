@@ -299,3 +299,4 @@ Add bitbucket statefulset to optimize memory usage
 Update bamboo
 Update bamboo
 Merge bitbucket helmfile to improve performance
+Update bamboo
