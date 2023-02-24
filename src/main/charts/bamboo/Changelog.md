@@ -1,5 +1,19 @@
 # Change Log
 
+## 1.10.26
+
+**Release date:** 2023-2-24
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Add bamboo tests for better readability
+* Move bamboo dependencies to update dependencies
+* Rework bamboo statefulset to improve performance
+* Add bamboo statefulset to improve performance
+
 ## 1.10.25
 
 **Release date:** 2023-2-24
