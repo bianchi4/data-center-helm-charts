@@ -270,3 +270,4 @@ Remove confluence tests to fix a bug
 Update bamboo
 Update bamboo
 Remove confluence statefulset to implement a new feature
+Update bamboo
