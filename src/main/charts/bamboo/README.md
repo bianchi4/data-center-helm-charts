@@ -237,3 +237,4 @@ Add bamboo statefulset to improve performance
 Update bamboo
 Update bamboo
 Rework bamboo statefulset to improve performance
+Update bamboo
