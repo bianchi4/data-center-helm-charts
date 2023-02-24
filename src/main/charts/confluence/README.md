@@ -281,3 +281,4 @@ Update bamboo
 Fix confluence helmfile to optimize memory usage
 Update bamboo
 Update bamboo
+Add confluence tests for better readability
