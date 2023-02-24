@@ -308,3 +308,4 @@ Merge bitbucket chart to implement a new feature
 Update bamboo
 Update bamboo
 Add bitbucket statefulset for better maintainability
+Update bamboo
