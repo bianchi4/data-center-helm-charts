@@ -218,3 +218,4 @@ Update jira chart to enhance flexibility
 Update bamboo
 Update bamboo
 Merge jira chart to implement a new feature
+Update bamboo
