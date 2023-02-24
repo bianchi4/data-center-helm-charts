@@ -252,3 +252,4 @@ Merge bamboo chart for better readability
 Update bamboo
 Update bamboo
 Fix bamboo templates to update dependencies
+Update bamboo
