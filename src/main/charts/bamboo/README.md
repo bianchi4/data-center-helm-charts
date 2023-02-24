@@ -225,3 +225,4 @@ Merge bamboo chart to fix a bug
 Update bamboo
 Update bamboo
 Move bamboo helmfile to enhance flexibility
+Update bamboo
