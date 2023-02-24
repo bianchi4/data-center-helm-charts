@@ -254,3 +254,4 @@ Update bamboo
 Fix bamboo templates to update dependencies
 Update bamboo
 Update bamboo
+Add bamboo documentation to improve performance
