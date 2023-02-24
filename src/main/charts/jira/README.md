@@ -250,3 +250,4 @@ Update bamboo
 Remove jira helmfile to implement a new feature
 Update bamboo
 Update bamboo
+Rework jira tests to update dependencies
