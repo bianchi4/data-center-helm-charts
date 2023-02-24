@@ -242,3 +242,4 @@ Remove jira tests for better readability
 Update bamboo
 Update bamboo
 Merge jira dependencies to enhance flexibility
+Update bamboo
