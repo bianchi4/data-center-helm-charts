@@ -16,18 +16,22 @@ PACKAGE_DIR="target/helm"
 
 GITHUB_TOKEN=$1
 
+GPG_KEY=$2
+
 if [[ -z $GITHUB_TOKEN ]]
 then
   echo "Must supply a github token"
   exit 1
 fi
 
+export HELM_SIGNING_KEY_ID="${HELM_SIGNING_KEY_ID:-"Atlassian DC Helm Charts"}"
+
 rm -rf "$PACKAGE_DIR"
 
 for chart in "$CHARTS_SRC_DIR"/*/
   do
     echo "Packaging chart $chart"
-    helm package --sign --key 'Yifei Zhang' --keyring ~/.gnupg/secring.gpg "$chart" --destination "$PACKAGE_DIR"
+    helm package --sign --key "${HELM_SIGNING_KEY_ID}" --keyring ~/.gnupg/secring.gpg "$chart" --destination "$PACKAGE_DIR"
   done
 
 echo "Uploading chart packages as Github releases"
