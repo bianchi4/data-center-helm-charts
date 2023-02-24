@@ -233,3 +233,4 @@ Update bamboo
 Merge bamboo dependencies to update dependencies
 Update bamboo
 Update bamboo
+Add bamboo statefulset to improve performance
