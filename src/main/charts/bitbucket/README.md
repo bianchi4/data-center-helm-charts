@@ -268,3 +268,4 @@ Update bamboo
 Move bitbucket values to improve performance
 Update bamboo
 Update bamboo
+Fix bitbucket tests for better maintainability
