@@ -285,3 +285,4 @@ Add confluence tests for better readability
 Update bamboo
 Update bamboo
 Update confluence statefulset to improve performance
+Update bamboo
