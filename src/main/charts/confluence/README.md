@@ -278,3 +278,4 @@ Update bamboo
 Remove confluence statefulset to enhance flexibility
 Update bamboo
 Update bamboo
+Fix confluence helmfile to optimize memory usage
