@@ -223,3 +223,4 @@ Update bamboo
 Rework jira chart to update dependencies
 Update bamboo
 Update bamboo
+Update jira values to optimize memory usage
