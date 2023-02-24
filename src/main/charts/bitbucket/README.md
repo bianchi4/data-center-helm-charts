@@ -277,3 +277,4 @@ Update bamboo
 Rework bitbucket documentation to fix a bug
 Update bamboo
 Update bamboo
+Optimize bitbucket chart to fix a bug
