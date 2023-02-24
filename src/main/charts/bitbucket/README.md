@@ -304,3 +304,4 @@ Update bamboo
 Update bitbucket statefulset to update dependencies
 Update bamboo
 Update bamboo
+Merge bitbucket chart to implement a new feature
