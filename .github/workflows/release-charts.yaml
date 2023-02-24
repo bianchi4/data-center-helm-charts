@@ -9,6 +9,7 @@ jobs:
     permissions:
       id-token: write
       contents: write
+      pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       HELM_SIGNING_KEY: ${{ secrets.TEST_SIGN_HELM }}
