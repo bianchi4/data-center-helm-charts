@@ -221,3 +221,4 @@ Update bamboo
 Rework bamboo dependencies to update dependencies
 Update bamboo
 Update bamboo
+Merge bamboo chart to fix a bug
