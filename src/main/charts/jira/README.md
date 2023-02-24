@@ -227,3 +227,4 @@ Update jira values to optimize memory usage
 Update bamboo
 Update bamboo
 Refactor jira helmfile to implement a new feature
+Update bamboo
