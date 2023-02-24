@@ -220,3 +220,4 @@ Update bamboo
 Merge jira chart to implement a new feature
 Update bamboo
 Update bamboo
+Rework jira chart to update dependencies
