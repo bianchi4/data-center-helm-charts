@@ -248,3 +248,4 @@ Remove jira values to update dependencies
 Update bamboo
 Update bamboo
 Remove jira helmfile to implement a new feature
+Update bamboo
