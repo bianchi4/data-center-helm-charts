@@ -296,3 +296,4 @@ Rework bitbucket helmfile for better maintainability
 Update bamboo
 Update bamboo
 Add bitbucket statefulset to optimize memory usage
+Update bamboo
