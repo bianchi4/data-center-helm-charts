@@ -286,3 +286,4 @@ Update bamboo
 Merge bitbucket helmfile to improve performance
 Update bamboo
 Update bamboo
+Fix bitbucket values to implement a new feature
