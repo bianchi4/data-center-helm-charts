@@ -228,3 +228,4 @@ Move bamboo helmfile to enhance flexibility
 Update bamboo
 Update bamboo
 Merge bamboo chart to implement a new feature
+Update bamboo
