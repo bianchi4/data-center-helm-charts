@@ -274,3 +274,4 @@ Update bamboo
 Update bamboo
 Add confluence statefulset to enhance flexibility
 Update bamboo
+Update bamboo
