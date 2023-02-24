@@ -240,3 +240,4 @@ Rework bamboo statefulset to improve performance
 Update bamboo
 Update bamboo
 Move bamboo dependencies to update dependencies
+Update bamboo
