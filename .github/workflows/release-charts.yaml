@@ -11,7 +11,6 @@ jobs:
       contents: read
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # remove this, it's for testing purposes only
       HELM_SIGNING_KEY: ${{ secrets.TEST_SIGN_HELM }}
       HELM_SIGNING_KEY_ID: ${{ secrets.HELM_SIGNING_KEY_ID }}
       GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}

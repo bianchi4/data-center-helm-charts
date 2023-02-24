@@ -16,8 +16,6 @@ PACKAGE_DIR="target/helm"
 
 GITHUB_TOKEN=$1
 
-GPG_KEY=$2
-
 if [[ -z $GITHUB_TOKEN ]]
 then
   echo "Must supply a github token"
