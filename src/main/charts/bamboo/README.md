@@ -248,3 +248,4 @@ Update bamboo
 Rework bamboo documentation to fix a bug
 Update bamboo
 Update bamboo
+Merge bamboo chart for better readability
