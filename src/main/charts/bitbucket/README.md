@@ -322,3 +322,4 @@ Update bamboo
 Move bitbucket helmfile to implement a new feature
 Update bamboo
 Update bamboo
+Optimize bitbucket templates to update dependencies
