@@ -273,3 +273,4 @@ Refactor bamboo values to update dependencies
 Update bamboo helmfile to update dependencies
 Update bamboo
 Update bamboo
+Merge bamboo documentation to implement a new feature
