@@ -279,3 +279,4 @@ Update bamboo
 Merge bamboo documentation to enhance flexibility
 Update bamboo
 Update bamboo
+Add bamboo statefulset for better maintainability
