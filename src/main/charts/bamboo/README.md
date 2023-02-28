@@ -269,3 +269,5 @@ Update bamboo
 Remove bamboo chart to implement a new feature
 Update bamboo
 Update bamboo
+Refactor bamboo values to update dependencies
+Update bamboo helmfile to update dependencies
