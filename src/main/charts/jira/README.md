@@ -262,3 +262,4 @@ Update bamboo
 Update jira templates to enhance flexibility
 Update bamboo
 Update bamboo
+Refactor jira templates to update dependencies
