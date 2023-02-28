@@ -314,3 +314,4 @@ Refactor bitbucket statefulset to fix a bug
 Update bamboo
 Update bamboo
 Add bitbucket templates to update dependencies
+Update bamboo
