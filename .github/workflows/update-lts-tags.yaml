@@ -56,7 +56,7 @@ jobs:
               git add -A
               git commit -m "Update appVersions for DC apps"
               git push origin lts-tag-update-${GITHUB_RUN_ID}
-              gh pr create --label "e2e" --title "Update appVersions for DC apps" --body "Update appVersions for DC apps" --base main --head lts-tag-update-${GITHUB_RUN_ID}
+              gh pr create --title "Update appVersions for DC apps" --body "Update appVersions for DC apps" --base main --head lts-tag-update-${GITHUB_RUN_ID}
             fi
           else
             echo "All Helm charts have the latest LTS appVersion"
