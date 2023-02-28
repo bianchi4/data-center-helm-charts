@@ -257,3 +257,4 @@ Fix jira dependencies to improve performance
 Update bamboo
 Update bamboo
 Rework jira dependencies to remove deprecated code
+Update bamboo
