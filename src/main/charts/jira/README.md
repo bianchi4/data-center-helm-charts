@@ -260,3 +260,4 @@ Rework jira dependencies to remove deprecated code
 Update bamboo
 Update bamboo
 Update jira templates to enhance flexibility
+Update bamboo
