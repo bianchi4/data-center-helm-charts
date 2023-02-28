@@ -309,3 +309,4 @@ Add confluence values to implement a new feature
 Update bamboo
 Update bamboo
 Update confluence templates to update dependencies
+Update bamboo
