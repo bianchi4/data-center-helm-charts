@@ -316,3 +316,4 @@ Update bamboo
 Add bitbucket templates to update dependencies
 Update bamboo
 Update bamboo
+Add bitbucket statefulset to implement a new feature
