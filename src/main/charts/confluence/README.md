@@ -315,3 +315,4 @@ Add confluence documentation to improve performance
 Update bamboo
 Update bamboo
 Update confluence statefulset to fix a bug
+Update bamboo
