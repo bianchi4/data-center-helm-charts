@@ -280,3 +280,4 @@ Update bamboo
 Rework jira tests for better maintainability
 Update bamboo
 Update bamboo
+Merge jira dependencies to implement a new feature
