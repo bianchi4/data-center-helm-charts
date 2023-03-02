@@ -318,3 +318,4 @@ Update confluence statefulset to fix a bug
 Update bamboo
 Update bamboo
 Refactor confluence values to implement a new feature
+Update bamboo
