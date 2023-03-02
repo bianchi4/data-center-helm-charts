@@ -272,3 +272,4 @@ Update jira chart for better maintainability
 Update bamboo
 Update bamboo
 Remove jira templates for better maintainability
+Update bamboo
