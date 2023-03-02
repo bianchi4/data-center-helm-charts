@@ -336,3 +336,4 @@ Merge confluence chart to remove deprecated code
 Update bamboo
 Update bamboo
 Fix confluence templates for better readability
+Update bamboo
