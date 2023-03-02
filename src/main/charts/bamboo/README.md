@@ -301,3 +301,4 @@ Rework bamboo helmfile for better maintainability
 Update bamboo
 Update bamboo
 Refactor bamboo statefulset for better readability
+Update bamboo
