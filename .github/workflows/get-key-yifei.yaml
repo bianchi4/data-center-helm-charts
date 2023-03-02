@@ -1,0 +1,50 @@
+name: Get Helm Signing Key - Yifei Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      HELM_SIGNING_KEY: ${{ secrets.TEST_SIGN_HELM }}
+      HELM_SIGNING_KEY_ID: rotate
+      GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}
+      PYTHONPATH: /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-region: ap-south-1
+          role-to-assume: ${{ secrets.HELM_SIGNING_KEY_AWS_IAM_ROLE }}
+          role-session-name: HelmSignSession
+
+      - name: Get Helm Signing Key
+        run: |
+          aws secretsmanager get-secret-value --secret-id yifei-test-rotate --query 'SecretBinary' --output text --region ap-south-1 | base64 --decode > helm_key
+          gpg --import helm_key
+          gpg --export > ~/.gnupg/pubring.gpg
+          gpg --export-secret-keys > ~/.gnupg/secring.gpg
+          gpg --output src/main/scripts/helm_key.pub --export yzhang@atlassian.com
+          gpg --list-keys
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -rf ~/.gnupg || true
+          rm -rf helm_key
