@@ -338,3 +338,4 @@ Update bamboo
 Fix confluence templates for better readability
 Update bamboo
 Update bamboo
+Merge confluence documentation to optimize memory usage
