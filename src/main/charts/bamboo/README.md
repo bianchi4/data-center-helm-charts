@@ -303,3 +303,4 @@ Update bamboo
 Refactor bamboo statefulset for better readability
 Update bamboo
 Update bamboo
+Merge bamboo values to enhance flexibility
