@@ -2,7 +2,7 @@ apiVersion: v2
 name: bamboo
 description: A chart for installing Bamboo Data Center on Kubernetes
 type: application
-version: 1.10.30
+version: 1.10.31
 appVersion: 9.2.2
 kubeVersion: ">=1.21.x-0"
 keywords:
@@ -21,10 +21,14 @@ annotations:
   artifacthub.io/containsSecurityUpdates: "false"
   artifacthub.io/changes: |-
     - "Update appVersion in DC apps"
-    - "Add bamboo statefulset for better maintainability"
-    - "Merge bamboo documentation to enhance flexibility"
-    - "Merge bamboo documentation to implement a new feature"
-    - "Update bamboo helmfile to update dependencies"
+    - "Merge bamboo values to enhance flexibility"
+    - "Refactor bamboo statefulset for better readability"
+    - "Rework bamboo helmfile for better maintainability"
+    - "Optimize bamboo tests for better readability"
+    - "Update bamboo templates to fix a bug"
+    - "Optimize bamboo values to implement a new feature"
+    - "Move bamboo chart to improve performance"
+    - "Fix bamboo dependencies to remove deprecated code"
 dependencies:
 - name: common
   version: 1.0.0
