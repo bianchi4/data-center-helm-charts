@@ -279,3 +279,4 @@ Update bamboo
 Update bamboo
 Rework jira tests for better maintainability
 Update bamboo
+Update bamboo
