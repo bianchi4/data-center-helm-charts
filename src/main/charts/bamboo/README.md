@@ -282,3 +282,4 @@ Update bamboo
 Add bamboo statefulset for better maintainability
 Update bamboo
 Update bamboo
+Fix bamboo dependencies to remove deprecated code
