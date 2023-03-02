@@ -326,3 +326,4 @@ Update bamboo
 Remove confluence tests to optimize memory usage
 Update bamboo
 Update bamboo
+Merge confluence dependencies to enhance flexibility
