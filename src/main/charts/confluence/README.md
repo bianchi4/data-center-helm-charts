@@ -330,3 +330,4 @@ Merge confluence dependencies to enhance flexibility
 Update bamboo
 Update bamboo
 Move confluence helmfile for better readability
+Update bamboo
