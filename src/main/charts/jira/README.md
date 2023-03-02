@@ -286,3 +286,4 @@ Update bamboo
 Optimize jira values for better readability
 Update bamboo
 Update bamboo
+Move jira dependencies to fix a bug
