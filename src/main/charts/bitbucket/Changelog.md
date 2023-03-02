@@ -1,5 +1,23 @@
 # Change Log
 
+## 1.10.31
+
+**Release date:** 2023-3-2
+
+![AppVersion: 7.21.11](https://img.shields.io/static/v1?label=AppVersion&message=7.21.11&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Move bitbucket dependencies to update dependencies
+* Remove bitbucket helmfile for better readability
+* Merge bitbucket dependencies to enhance flexibility
+* Move bitbucket dependencies to implement a new feature
+* Update bitbucket dependencies to fix a bug
+* Rework bitbucket templates to remove deprecated code
+* Merge bitbucket templates to remove deprecated code
+* Add bitbucket dependencies to improve performance
+
 ## 1.10.30
 
 **Release date:** 2023-2-28
