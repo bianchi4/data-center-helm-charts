@@ -323,3 +323,4 @@ Update bamboo
 Refactor confluence templates to improve performance
 Update bamboo
 Update bamboo
+Remove confluence tests to optimize memory usage
