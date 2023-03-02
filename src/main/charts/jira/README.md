@@ -268,3 +268,4 @@ Update bamboo
 Optimize jira helmfile to remove deprecated code
 Update bamboo
 Update bamboo
+Update jira chart for better maintainability
