@@ -285,3 +285,4 @@ Update bamboo
 Fix bamboo dependencies to remove deprecated code
 Update bamboo
 Update bamboo
+Move bamboo chart to improve performance
