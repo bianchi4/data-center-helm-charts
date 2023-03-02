@@ -334,3 +334,4 @@ Update bamboo
 Rework bitbucket templates to remove deprecated code
 Update bamboo
 Update bamboo
+Update bitbucket dependencies to fix a bug
