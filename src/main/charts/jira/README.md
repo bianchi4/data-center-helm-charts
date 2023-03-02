@@ -284,3 +284,4 @@ Merge jira dependencies to implement a new feature
 Update bamboo
 Update bamboo
 Optimize jira values for better readability
+Update bamboo
