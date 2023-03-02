@@ -294,3 +294,4 @@ Update bamboo
 Update bamboo templates to fix a bug
 Update bamboo
 Update bamboo
+Optimize bamboo tests for better readability
