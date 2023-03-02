@@ -274,3 +274,4 @@ Update bamboo
 Remove jira templates for better maintainability
 Update bamboo
 Update bamboo
+Refactor jira tests to remove deprecated code
