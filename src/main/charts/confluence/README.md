@@ -341,3 +341,4 @@ Update bamboo
 Merge confluence documentation to optimize memory usage
 Update bamboo
 Update bamboo
+Optimize confluence chart for better maintainability
