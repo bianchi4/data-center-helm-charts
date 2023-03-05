@@ -330,3 +330,4 @@ Update bamboo
 CLIP-1234: Update bamboo dependencies to optimize memory usage
 Update bamboo
 Update bamboo
+CLIP-1234: Update bamboo helmfile to fix a bug
