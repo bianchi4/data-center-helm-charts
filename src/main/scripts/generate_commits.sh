@@ -14,7 +14,7 @@ for i in {1..4}; do
     action_index=$((RANDOM % ${#actions[@]}))
     object_index=$((RANDOM % ${#objects[@]}))
     description_index=$((RANDOM % ${#descriptions[@]}))
-    commit_message="${actions[$action_index]} ${product} ${objects[$object_index]} ${descriptions[$description_index]}"
+    commit_message="CLIP-1234: ${actions[$action_index]} ${product} ${objects[$object_index]} ${descriptions[$description_index]}"
     echo "$commit_message" >> $basedir/$product/$readme
     git add $basedir/${product}/$readme
     git commit -m "$commit_message"

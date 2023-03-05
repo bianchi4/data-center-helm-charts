@@ -26,8 +26,9 @@ from tempfile import mkstemp
 products = ["bamboo", "bamboo-agent",
             "bitbucket", "confluence", "crowd", "jira"]
 prod_base = "src/main/charts"
-jira_keys_regex = "r'(CLIP|DCCLIP)-[0-9]{1,5}(?![0-9]): '"
-commits_to_drop = 'r\'^\* Prepare release [0-9].{1,4}\''
+
+jira_keys_pattern = r'(CLIP|DCCLIP)-[0-9]{1,5}(?![0-9]): '
+drop_commits_pattern = r'^\* Prepare release [0-9].{1,4}'
 
 
 # parse Chart.yaml to get K8s version, app version and Helm chart version
@@ -66,9 +67,9 @@ def gen_changelog(product, path):
                         abbrev_commit=True, date='relative', )
 
     changelog = changelog.split('\n')
+    pattern = re.compile(drop_commits_pattern)
     # we don't need pre-release commits that update chart.yamls and changelogs
     # this pattern is based on the commit message from a GitHub action that prepares Helm release
-    pattern = re.compile(commits_to_drop)
     filtered_changelog = list(filter(lambda x: not pattern.match(x), changelog))
 
     if len(filtered_changelog) == 0 or filtered_changelog.count(''):
@@ -81,7 +82,7 @@ def gen_changelog(product, path):
     # remove Jira keys from commit messages. This substitution assumes the commit message has the following format:
     # CLIP-1234: Here is my message
     # DCCLIP-1234: Here is my message
-    sanitized_changelog = map(lambda c: re.sub(jira_keys_regex, '', c), filtered_changelog)
+    sanitized_changelog = map(lambda c: re.sub(jira_keys_pattern, '', c), filtered_changelog)
     return list(dict.fromkeys(sanitized_changelog))
 
 
