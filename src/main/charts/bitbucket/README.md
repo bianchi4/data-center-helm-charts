@@ -367,3 +367,4 @@ Update bamboo
 CLIP-1234: Remove bitbucket helmfile for better maintainability
 Update bamboo
 Update bamboo
+CLIP-1234: Move bitbucket documentation to implement a new feature
