@@ -364,3 +364,4 @@ Update bamboo
 Update bamboo
 CLIP-1234: Rework confluence templates for better maintainability
 Update bamboo
+Update bamboo
