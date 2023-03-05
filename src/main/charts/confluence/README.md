@@ -350,3 +350,4 @@ Update bamboo
 Merge confluence helmfile to enhance flexibility
 Update bamboo
 Update bamboo
+Remove confluence statefulset to fix a bug
