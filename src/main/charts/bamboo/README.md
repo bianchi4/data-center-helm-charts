@@ -309,3 +309,4 @@ Update bamboo
 Move bamboo statefulset to enhance flexibility
 Update bamboo
 Update bamboo
+Remove bamboo templates to optimize memory usage
