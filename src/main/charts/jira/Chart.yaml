@@ -2,7 +2,7 @@ apiVersion: v2
 name: jira
 description: A chart for installing Jira Data Center on Kubernetes
 type: application
-version: 1.10.32
+version: 1.10.33
 appVersion: 9.4.3
 kubeVersion: ">=1.21.x-0"
 keywords:
@@ -21,7 +21,19 @@ deprecated: false
 annotations:
   artifacthub.io/containsSecurityUpdates: "false"
   artifacthub.io/changes: |-
-    - "Update Helm chart version"
+    - "Update appVersion in DC apps"
+    - "Move jira templates to fix a bug"
+    - "Optimize jira values to improve performance"
+    - "Rework jira values to fix a bug"
+    - "Merge jira tests for better readability"
+    - "Update jira statefulset to enhance flexibility"
+    - "Update jira documentation to implement a new feature"
+    - "Remove jira values for better maintainability"
+    - "Refactor jira tests to improve performance"
+    - "Add jira statefulset to enhance flexibility"
+    - "Rework jira statefulset to optimize memory usage"
+    - "Fix jira tests to fix a bug"
+    - "Remove jira chart to remove deprecated code"
 
 dependencies:
 - name: common

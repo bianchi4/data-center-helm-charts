@@ -1,5 +1,27 @@
 # Change Log
 
+## 1.10.33
+
+**Release date:** 2023-3-5
+
+![AppVersion: 9.2.2](https://img.shields.io/static/v1?label=AppVersion&message=9.2.2&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Rework bamboo chart to update dependencies
+* Optimize bamboo dependencies to enhance flexibility
+* Rework bamboo chart to optimize memory usage
+* Update bamboo helmfile to fix a bug
+* Update bamboo dependencies to optimize memory usage
+* Optimize bamboo dependencies to remove deprecated code
+* Add bamboo documentation to update dependencies
+* Remove bamboo chart to improve performance
+* Merge bamboo dependencies to update dependencies
+* Remove bamboo tests to update dependencies
+* Remove bamboo templates to optimize memory usage
+* Move bamboo statefulset to enhance flexibility
+
 ## 1.10.32
 
 **Release date:** 2023-3-4
