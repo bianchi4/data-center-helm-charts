@@ -308,3 +308,4 @@ CLIP-1234: Refactor jira tests to improve performance
 Update bamboo
 Update bamboo
 CLIP-1234: Remove jira values for better maintainability
+Update bamboo
