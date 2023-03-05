@@ -339,3 +339,4 @@ Update bamboo
 CLIP-1234: Optimize bamboo dependencies to enhance flexibility
 Update bamboo
 Update bamboo
+CLIP-1234: Rework bamboo chart to update dependencies
