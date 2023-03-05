@@ -310,3 +310,4 @@ Update bamboo
 CLIP-1234: Remove jira values for better maintainability
 Update bamboo
 Update bamboo
+CLIP-1234: Update jira documentation to implement a new feature
