@@ -382,3 +382,4 @@ Update bamboo
 CLIP-1234: Remove bitbucket chart to remove deprecated code
 Update bamboo
 Update bamboo
+CLIP-1234: Optimize bitbucket dependencies for better readability
