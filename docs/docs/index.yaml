@@ -4,6 +4,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - "Update appVersion in DC apps"
+        - "Rework bamboo chart to update dependencies"
+        - "Optimize bamboo dependencies to enhance flexibility"
+        - "Rework bamboo chart to optimize memory usage"
+        - "Update bamboo helmfile to fix a bug"
+        - "Update bamboo dependencies to optimize memory usage"
+        - "Optimize bamboo dependencies to remove deprecated code"
+        - "Add bamboo documentation to update dependencies"
+        - "Remove bamboo chart to improve performance"
+        - "Merge bamboo dependencies to update dependencies"
+        - "Remove bamboo tests to update dependencies"
+        - "Remove bamboo templates to optimize memory usage"
+        - "Move bamboo statefulset to enhance flexibility"
+      artifacthub.io/containsSecurityUpdates: "false"
+    apiVersion: v2
+    appVersion: 9.2.2
+    created: "2023-03-05T20:51:04.422158903Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Bamboo Data Center on Kubernetes
+    digest: 511a6fe6b36296ed669b264d3ab91a8fe7660afd0b062806740c63cacf5e2f08
+    home: https://www.atlassian.com/software/bamboo
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/bamboo.svg
+    keywords:
+    - Bamboo
+    - Bamboo Server
+    - Bamboo Data Center
+    - Bamboo DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: bamboo
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-bamboo-server
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/bamboo-1.10.33/bamboo-1.10.33.tgz
+    version: 1.10.33
+  - annotations:
+      artifacthub.io/changes: |-
+        - "Update appVersion in DC apps"
         - "Merge bamboo values to enhance flexibility"
         - "Refactor bamboo statefulset for better readability"
         - "Rework bamboo helmfile for better maintainability"
@@ -1470,6 +1512,35 @@ entries:
       artifacthub.io/containsSecurityUpdates: "false"
     apiVersion: v2
     appVersion: 9.2.1
+    created: "2023-03-05T20:51:04.589357605Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Bamboo Data Center remote agents on Kubernetes
+    digest: 3964a3170bd58020b3f0222751770f0e6e871561b48d2b0e5b8b74047c562dbc
+    home: https://www.atlassian.com/software/bamboo
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/bamboo.svg
+    keywords:
+    - Bamboo
+    - Bamboo Agent
+    - Bamboo Data Center
+    - Bamboo DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: bamboo-agent
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-bamboo-agent-base
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/bamboo-agent-1.10.33/bamboo-agent-1.10.33.tgz
+    version: 1.10.33
+  - annotations:
+      artifacthub.io/changes: '- "Update Helm chart version"'
+      artifacthub.io/containsSecurityUpdates: "false"
+    apiVersion: v2
+    appVersion: 9.2.1
     created: "2023-03-02T07:36:55.877157021Z"
     dependencies:
     - name: common
@@ -2806,6 +2877,48 @@ entries:
     - https://github.com/atlassian/data-center-helm-charts/releases/download/bamboo-agent-0.0.1/bamboo-agent-0.0.1.tgz
     version: 0.0.1
   bitbucket:
+  - annotations:
+      artifacthub.io/changes: |-
+        - "Update appVersion in DC apps"
+        - "Optimize bitbucket dependencies for better readability"
+        - "Remove bitbucket chart to remove deprecated code"
+        - "Fix bitbucket tests to improve performance"
+        - "Update bitbucket values to update dependencies"
+        - "Move bitbucket chart to enhance flexibility"
+        - "Move bitbucket documentation to implement a new feature"
+        - "Remove bitbucket helmfile for better maintainability"
+        - "Fix bitbucket statefulset to update dependencies"
+        - "Refactor bitbucket statefulset for better readability"
+        - "Rework bitbucket templates for better maintainability"
+        - "Update bitbucket documentation to optimize memory usage"
+        - "Add bitbucket tests for better maintainability"
+      artifacthub.io/containsSecurityUpdates: "false"
+    apiVersion: v2
+    appVersion: 7.21.11
+    created: "2023-03-05T20:51:04.734832282Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Bitbucket Data Center on Kubernetes
+    digest: 70454fbb36a3ef056dfe74545facaecfc29b45be16c03892cd187dfdf4009c6b
+    home: https://atlassian.github.io/data-center-helm-charts/
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/bitbucket.svg
+    keywords:
+    - Bitbucket
+    - Bitbucket Server
+    - Bitbucket Data Center
+    - Bitbucket DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: bitbucket
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-atlassian-bitbucket-server/
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/bitbucket-1.10.33/bitbucket-1.10.33.tgz
+    version: 1.10.33
   - annotations:
       artifacthub.io/changes: |-
         - "Update appVersion in DC apps"
@@ -4655,6 +4768,48 @@ entries:
     - https://github.com/atlassian/data-center-helm-charts/releases/download/common-1.0.0/common-1.0.0.tgz
     version: 1.0.0
   confluence:
+  - annotations:
+      artifacthub.io/changes: |-
+        - "Update appVersion in DC apps"
+        - "Add confluence values to remove deprecated code"
+        - "Rework confluence chart to improve performance"
+        - "Remove confluence chart to optimize memory usage"
+        - "Fix confluence documentation to remove deprecated code"
+        - "Rework confluence templates for better maintainability"
+        - "Merge confluence tests to optimize memory usage"
+        - "Optimize confluence helmfile to implement a new feature"
+        - "Rework confluence documentation to optimize memory usage"
+        - "Remove confluence statefulset to fix a bug"
+        - "Merge confluence helmfile to enhance flexibility"
+        - "Update confluence documentation to fix a bug"
+        - "Optimize confluence chart for better maintainability"
+      artifacthub.io/containsSecurityUpdates: "true"
+    apiVersion: v2
+    appVersion: 7.19.5
+    created: "2023-03-05T20:51:04.968436778Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Confluence Data Center on Kubernetes
+    digest: 84bbf5287b555c3fae1e9f5c3a5af1de468b761c02eec28c52b79efbc079f7c0
+    home: https://atlassian.github.io/data-center-helm-charts/
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/confluence.svg
+    keywords:
+    - Confluence
+    - Confluence Server
+    - Confluence Data Center
+    - Confluence DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: confluence
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-atlassian-confluence-server/
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/confluence-1.10.33/confluence-1.10.33.tgz
+    version: 1.10.33
   - annotations:
       artifacthub.io/changes: |-
         - "Update appVersion in DC apps"
@@ -6609,6 +6764,35 @@ entries:
       artifacthub.io/containsSecurityUpdates: "false"
     apiVersion: v2
     appVersion: 5.1.2
+    created: "2023-03-05T20:51:05.098567626Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Crowd Data Center on Kubernetes
+    digest: 0d7aba1703ab756deb121687f034b5abe24735a5e4b7a9bf91c81547fe77a795
+    home: https://atlassian.github.io/data-center-helm-charts/
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/crowd.svg
+    keywords:
+    - Crowd
+    - Crowd Server
+    - Crowd Data Center
+    - Crowd DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: crowd
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-atlassian-crowd/
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/crowd-1.10.33/crowd-1.10.33.tgz
+    version: 1.10.33
+  - annotations:
+      artifacthub.io/changes: '- "Update Helm chart version"'
+      artifacthub.io/containsSecurityUpdates: "false"
+    apiVersion: v2
+    appVersion: 5.1.2
     created: "2023-03-02T07:36:56.423967447Z"
     dependencies:
     - name: common
@@ -8284,6 +8468,49 @@ entries:
     - https://github.com/atlassian/data-center-helm-charts/releases/download/crowd-0.7.0/crowd-0.7.0.tgz
     version: 0.7.0
   jira:
+  - annotations:
+      artifacthub.io/changes: |-
+        - "Update appVersion in DC apps"
+        - "Move jira templates to fix a bug"
+        - "Optimize jira values to improve performance"
+        - "Rework jira values to fix a bug"
+        - "Merge jira tests for better readability"
+        - "Update jira statefulset to enhance flexibility"
+        - "Update jira documentation to implement a new feature"
+        - "Remove jira values for better maintainability"
+        - "Refactor jira tests to improve performance"
+        - "Add jira statefulset to enhance flexibility"
+        - "Rework jira statefulset to optimize memory usage"
+        - "Fix jira tests to fix a bug"
+        - "Remove jira chart to remove deprecated code"
+      artifacthub.io/containsSecurityUpdates: "false"
+    apiVersion: v2
+    appVersion: 9.4.3
+    created: "2023-03-05T20:51:05.241411764Z"
+    dependencies:
+    - name: common
+      repository: https://atlassian.github.io/data-center-helm-charts
+      version: 1.0.0
+    description: A chart for installing Jira Data Center on Kubernetes
+    digest: 64be5f40447b42dff4299c9dedfb6a9f0e16c8de86cfe330148b488a680a7e80
+    home: https://atlassian.github.io/data-center-helm-charts/
+    icon: https://atlassian.github.io/data-center-helm-charts/icons/jira-software.svg
+    keywords:
+    - Jira
+    - Jira Software
+    - Jira Server
+    - Jira Data Center
+    - Jira DC
+    - Atlassian
+    kubeVersion: '>=1.21.x-0'
+    name: jira
+    sources:
+    - https://github.com/atlassian/data-center-helm-charts
+    - https://bitbucket.org/atlassian-docker/docker-atlassian-jira/
+    type: application
+    urls:
+    - https://github.com/bianchi2/data-center-helm-charts/releases/download/jira-1.10.33/jira-1.10.33.tgz
+    version: 1.10.33
   - annotations:
       artifacthub.io/changes: |-
         - "Update appVersion in DC apps"
@@ -10180,4 +10407,4 @@ entries:
     urls:
     - https://github.com/atlassian/data-center-helm-charts/releases/download/jira-0.6.0/jira-0.6.0.tgz
     version: 0.6.0
-generated: "2023-03-02T07:36:56.592367061Z"
+generated: "2023-03-05T20:51:05.243597496Z"
