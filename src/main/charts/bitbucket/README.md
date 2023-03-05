@@ -376,3 +376,4 @@ Update bamboo
 CLIP-1234: Update bitbucket values to update dependencies
 Update bamboo
 Update bamboo
+CLIP-1234: Fix bitbucket tests to improve performance
