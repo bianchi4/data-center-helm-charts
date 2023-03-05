@@ -365,3 +365,4 @@ CLIP-1234: Fix bitbucket statefulset to update dependencies
 Update bamboo
 Update bamboo
 CLIP-1234: Remove bitbucket helmfile for better maintainability
+Update bamboo
