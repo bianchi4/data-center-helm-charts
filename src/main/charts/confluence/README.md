@@ -366,3 +366,4 @@ CLIP-1234: Rework confluence templates for better maintainability
 Update bamboo
 Update bamboo
 CLIP-1234: Fix confluence documentation to remove deprecated code
+Update bamboo
