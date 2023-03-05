@@ -324,3 +324,4 @@ Update bamboo
 CLIP-1234: Add bamboo documentation to update dependencies
 Update bamboo
 Update bamboo
+CLIP-1234: Optimize bamboo dependencies to remove deprecated code
