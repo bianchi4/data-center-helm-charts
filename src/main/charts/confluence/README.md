@@ -356,3 +356,4 @@ Update bamboo
 CLIP-1234: Rework confluence documentation to optimize memory usage
 Update bamboo
 Update bamboo
+CLIP-1234: Optimize confluence helmfile to implement a new feature
