@@ -302,3 +302,4 @@ Rework jira statefulset to optimize memory usage
 Update bamboo
 Update bamboo
 Add jira statefulset to enhance flexibility
+Update bamboo
