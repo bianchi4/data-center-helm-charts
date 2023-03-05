@@ -296,3 +296,4 @@ Remove jira chart to remove deprecated code
 Update bamboo
 Update bamboo
 Fix jira tests to fix a bug
+Update bamboo
