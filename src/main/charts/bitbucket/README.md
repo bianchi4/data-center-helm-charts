@@ -358,3 +358,4 @@ Update bamboo
 Rework bitbucket templates for better maintainability
 Update bamboo
 Update bamboo
+Refactor bitbucket statefulset for better readability
