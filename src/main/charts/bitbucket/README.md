@@ -372,3 +372,4 @@ Update bamboo
 Update bamboo
 CLIP-1234: Move bitbucket chart to enhance flexibility
 Update bamboo
+Update bamboo
