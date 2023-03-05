@@ -315,3 +315,4 @@ Update bamboo
 Update bamboo
 CLIP-1234: Update jira statefulset to enhance flexibility
 Update bamboo
+Update bamboo
