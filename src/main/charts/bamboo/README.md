@@ -307,3 +307,4 @@ Merge bamboo values to enhance flexibility
 Update bamboo
 Update bamboo
 Move bamboo statefulset to enhance flexibility
+Update bamboo
