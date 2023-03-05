@@ -298,3 +298,4 @@ Update bamboo
 Fix jira tests to fix a bug
 Update bamboo
 Update bamboo
+Rework jira statefulset to optimize memory usage
