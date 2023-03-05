@@ -356,3 +356,4 @@ Update bitbucket documentation to optimize memory usage
 Update bamboo
 Update bamboo
 Rework bitbucket templates for better maintainability
+Update bamboo
