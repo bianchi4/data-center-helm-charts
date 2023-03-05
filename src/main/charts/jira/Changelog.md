@@ -1,5 +1,27 @@
 # Change Log
 
+## 1.10.33
+
+**Release date:** 2023-3-5
+
+![AppVersion: 9.4.3](https://img.shields.io/static/v1?label=AppVersion&message=9.4.3&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Move jira templates to fix a bug
+* Optimize jira values to improve performance
+* Rework jira values to fix a bug
+* Merge jira tests for better readability
+* Update jira statefulset to enhance flexibility
+* Update jira documentation to implement a new feature
+* Remove jira values for better maintainability
+* Refactor jira tests to improve performance
+* Add jira statefulset to enhance flexibility
+* Rework jira statefulset to optimize memory usage
+* Fix jira tests to fix a bug
+* Remove jira chart to remove deprecated code
+
 ## 1.10.32
 
 **Release date:** 2023-3-4

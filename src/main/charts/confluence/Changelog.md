@@ -1,6 +1,28 @@
 # Change Log
 
 
+## 1.10.33
+
+**Release date:** 2023-3-5
+
+![AppVersion: 7.19.5](https://img.shields.io/static/v1?label=AppVersion&message=7.19.5&color=success&logo=)
+![Kubernetes: >=1.21.x-0](https://img.shields.io/static/v1?label=Kubernetes&message=>=1.21.x-0&color=informational&logo=kubernetes)
+![Helm: v3](https://img.shields.io/static/v1?label=Helm&message=v3&color=informational&logo=helm)
+
+* Update appVersion in DC apps
+* Add confluence values to remove deprecated code
+* Rework confluence chart to improve performance
+* Remove confluence chart to optimize memory usage
+* Fix confluence documentation to remove deprecated code
+* Rework confluence templates for better maintainability
+* Merge confluence tests to optimize memory usage
+* Optimize confluence helmfile to implement a new feature
+* Rework confluence documentation to optimize memory usage
+* Remove confluence statefulset to fix a bug
+* Merge confluence helmfile to enhance flexibility
+* Update confluence documentation to fix a bug
+* Optimize confluence chart for better maintainability
+
 ## 1.10.32
 
 **Release date:** 2023-3-4
