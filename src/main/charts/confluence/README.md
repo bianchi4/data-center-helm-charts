@@ -347,3 +347,4 @@ Update bamboo
 Update confluence documentation to fix a bug
 Update bamboo
 Update bamboo
+Merge confluence helmfile to enhance flexibility
