@@ -320,3 +320,4 @@ CLIP-1234: Merge jira tests for better readability
 Update bamboo
 Update bamboo
 CLIP-1234: Rework jira values to fix a bug
+Update bamboo
